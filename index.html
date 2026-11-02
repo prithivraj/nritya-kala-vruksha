@@ -254,10 +254,16 @@
       align-items: center;
     }
 
+    .hero-grid > *,
+    .practices-layout > *,
+    .spotlight-grid > * {
+      min-width: 0;
+    }
+
     .hero-title {
       font-family: var(--serif);
       font-weight: 300;
-      font-size: clamp(3.8rem, 7.5vw, 6.8rem);
+      font-size: clamp(3.2rem, 7.5vw, 6.8rem);
       line-height: 0.92;
       color: var(--ivory);
       margin: 18px 0 22px;
@@ -273,12 +279,20 @@
 
     .hero-pillars {
       font-family: var(--serif);
-      font-size: clamp(0.82rem, 1.08vw, 1.05rem);
-      letter-spacing: 0.14em;
+      font-size: clamp(0.78rem, 1.05vw, 1.02rem);
+      letter-spacing: 0.13em;
       text-transform: uppercase;
       color: var(--gold-soft);
       margin-bottom: 24px;
-      white-space: nowrap;
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 8px 12px;
+      line-height: 1.5;
+    }
+
+    .hero-pillars span.sep {
+      color: var(--gold);
     }
 
     .hero-lead {
@@ -300,6 +314,7 @@
     .btn-gold {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 10px;
       padding: 15px 32px;
       background: var(--gold);
@@ -321,6 +336,7 @@
     .btn-ghost {
       display: inline-flex;
       align-items: center;
+      justify-content: center;
       gap: 10px;
       padding: 15px 28px;
       border: 1px solid rgba(250, 245, 236, 0.22);
@@ -345,13 +361,14 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 540px;
+      min-height: 520px;
+      width: 100%;
     }
 
     .sacred-arch {
       position: absolute;
-      width: 360px;
-      height: 470px;
+      width: min(360px, 84vw);
+      height: min(470px, 108vw);
       border-radius: 190px 190px 6px 6px;
       border: 1px solid rgba(243, 220, 153, 0.3);
       background: linear-gradient(180deg, rgba(140, 39, 25, 0.22) 0%, rgba(14, 10, 12, 0.55) 100%);
@@ -369,8 +386,8 @@
     .sun-halo {
       position: absolute;
       top: 10%;
-      width: 230px;
-      height: 230px;
+      width: min(230px, 58vw);
+      height: min(230px, 58vw);
       border-radius: 50%;
       background: radial-gradient(circle, rgba(216, 173, 56, 0.26) 0%, rgba(140, 39, 25, 0.1) 55%, transparent 72%);
       will-change: transform;
@@ -397,7 +414,7 @@
        POETIC TALA BREATH DIVIDER (REPLACES TICKER)
        ========================================== */
     .tala-divider {
-      padding: 40px 0;
+      padding: 40px 5vw;
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -418,18 +435,19 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      gap: 28px;
+      gap: 20px;
       font-family: var(--serif);
       font-style: italic;
-      font-size: clamp(1.25rem, 2.2vw, 1.65rem);
+      font-size: clamp(1.1rem, 2.2vw, 1.65rem);
       color: var(--gold-soft);
       letter-spacing: 0.08em;
     }
 
     .tala-triad span.line {
-      width: 48px;
+      width: 40px;
       height: 1px;
       background: linear-gradient(90deg, transparent, var(--gold-line), transparent);
+      flex-shrink: 0;
     }
 
     /* ==========================================
@@ -447,7 +465,7 @@
     .section-title {
       font-family: var(--serif);
       font-weight: 300;
-      font-size: clamp(2.5rem, 4.5vw, 4rem);
+      font-size: clamp(2.3rem, 4.5vw, 4rem);
       line-height: 1.04;
       color: var(--ivory);
       margin-top: 10px;
@@ -493,13 +511,13 @@
       font-style: italic;
       font-size: 1.2rem;
       color: var(--gold);
-      margin-right: 20px;
+      margin-right: 16px;
     }
 
     .practice-name {
       font-family: var(--serif);
       font-weight: 400;
-      font-size: clamp(1.75rem, 2.8vw, 2.45rem);
+      font-size: clamp(1.5rem, 2.8vw, 2.45rem);
       color: var(--ivory);
       transition: color 0.3s ease, transform 0.4s var(--ease);
     }
@@ -513,7 +531,7 @@
     .practice-meta {
       font-family: var(--serif);
       font-size: 0.78rem;
-      letter-spacing: 0.2em;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--ivory-dim);
       white-space: nowrap;
@@ -524,11 +542,11 @@
       overflow: hidden;
       opacity: 0;
       transition: max-height 0.5s var(--ease), opacity 0.4s ease, margin-top 0.4s ease;
-      padding-left: 44px;
+      padding-left: 38px;
     }
 
     .practice-item.active .practice-desc {
-      max-height: 180px;
+      max-height: 260px;
       opacity: 1;
       margin-top: 12px;
     }
@@ -544,6 +562,7 @@
     .practice-visual-arch {
       position: relative;
       aspect-ratio: 4 / 5;
+      width: 100%;
       max-width: 420px;
       margin: 0 auto;
       border-radius: 200px 200px 6px 6px;
@@ -572,7 +591,7 @@
       position: relative;
       max-width: 860px;
       margin: 0 auto;
-      padding-left: 44px;
+      padding-left: 40px;
     }
 
     /* Vertical golden thread of Parampara (Lineage) */
@@ -597,7 +616,7 @@
 
     .timeline-dot {
       position: absolute;
-      left: -44px;
+      left: -40px;
       top: 6px;
       width: 15px;
       height: 15px;
@@ -615,7 +634,7 @@
     .timeline-era {
       font-family: var(--serif);
       font-size: 0.8rem;
-      letter-spacing: 0.24em;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
       color: var(--gold);
       display: block;
@@ -625,10 +644,10 @@
     .timeline-title {
       font-family: var(--serif);
       font-weight: 400;
-      font-size: clamp(1.65rem, 2.5vw, 2.15rem);
+      font-size: clamp(1.45rem, 2.5vw, 2.15rem);
       color: var(--ivory);
       margin-bottom: 8px;
-      line-height: 1.2;
+      line-height: 1.22;
     }
 
     .timeline-text {
@@ -669,7 +688,7 @@
       font-family: var(--serif);
       font-style: italic;
       font-weight: 400;
-      font-size: clamp(2.8rem, 4.8vw, 4.2rem);
+      font-size: clamp(2.4rem, 4.8vw, 4.2rem);
       line-height: 0.98;
       color: var(--ivory);
       margin: 12px 0 16px;
@@ -677,14 +696,15 @@
 
     .spotlight-meta {
       font-family: var(--serif);
-      font-size: 1.15rem;
-      letter-spacing: 0.16em;
+      font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+      letter-spacing: 0.14em;
       text-transform: uppercase;
       color: var(--gold-soft);
       padding: 12px 0;
       border-top: 1px solid rgba(243, 220, 153, 0.25);
       border-bottom: 1px solid rgba(243, 220, 153, 0.25);
       margin-bottom: 22px;
+      line-height: 1.5;
     }
 
     .spotlight-summary {
@@ -733,8 +753,9 @@
 
     .arch-event {
       font-family: var(--serif);
-      font-size: 1.4rem;
+      font-size: 1.35rem;
       color: var(--ivory);
+      line-height: 1.25;
     }
 
     .arch-note {
@@ -784,7 +805,7 @@
     .footer-heading {
       font-family: var(--serif);
       font-weight: 300;
-      font-size: clamp(2.6rem, 5vw, 4.4rem);
+      font-size: clamp(2.4rem, 5vw, 4.4rem);
       line-height: 1.02;
       color: var(--ivory);
       margin-bottom: 14px;
@@ -797,11 +818,12 @@
 
     .footer-locations {
       font-family: var(--serif);
-      font-size: 0.95rem;
-      letter-spacing: 0.24em;
+      font-size: 0.92rem;
+      letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--ivory-muted);
       margin-bottom: 38px;
+      line-height: 1.6;
     }
 
     .footer-actions {
@@ -818,14 +840,24 @@
       font-size: 0.8rem;
       color: var(--ivory-dim);
       letter-spacing: 0.06em;
+      line-height: 1.6;
     }
 
-    /* Responsive */
+    /* Desktop Single-Line Guarantee for Hero Pillars */
+    @media (min-width: 961px) {
+      .hero-pillars {
+        flex-wrap: nowrap;
+        white-space: nowrap;
+      }
+    }
+
+    /* Tablet & Mobile Responsive Rules */
     @media (max-width: 960px) {
       .hero-grid,
       .practices-layout,
       .spotlight-grid {
         grid-template-columns: 1fr;
+        gap: 44px;
       }
 
       .archive-row {
@@ -840,6 +872,174 @@
 
       .nav-links {
         display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .nav-bar,
+      .nav-bar.scrolled {
+        padding: 14px 18px;
+        gap: 10px;
+      }
+
+      .nav-brand {
+        gap: 10px;
+        min-width: 0;
+      }
+
+      .nav-brand img {
+        width: 34px;
+        height: 34px;
+        flex-shrink: 0;
+      }
+
+      .nav-brand-title {
+        font-size: 0.86rem;
+        letter-spacing: 0.12em;
+        white-space: nowrap;
+      }
+
+      .nav-insta {
+        padding: 7px 13px;
+        font-size: 0.72rem;
+        letter-spacing: 0.1em;
+        white-space: nowrap;
+        flex-shrink: 0;
+      }
+
+      .wrap {
+        padding: 0 20px;
+      }
+
+      .hero {
+        min-height: auto;
+        padding: 104px 0 48px;
+      }
+
+      .micro-label {
+        font-size: 0.7rem;
+        letter-spacing: 0.18em;
+        gap: 8px;
+      }
+
+      .micro-label::before {
+        width: 18px;
+      }
+
+      .hero-title {
+        font-size: clamp(2.85rem, 13vw, 3.8rem);
+        margin: 14px 0 18px;
+      }
+
+      .hero-title em {
+        padding-left: 0;
+      }
+
+      .hero-pillars {
+        font-size: 0.78rem;
+        letter-spacing: 0.12em;
+        gap: 6px 10px;
+        margin-bottom: 18px;
+      }
+
+      .hero-lead {
+        font-size: 0.96rem;
+        line-height: 1.72;
+      }
+
+      .hero-cta-row {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        margin-top: 28px;
+      }
+
+      .btn-gold,
+      .btn-ghost {
+        width: 100%;
+        padding: 14px 20px;
+        font-size: 0.86rem;
+      }
+
+      .hero-stage {
+        min-height: 390px;
+        margin-top: 10px;
+      }
+
+      .sacred-arch {
+        width: min(290px, 82vw);
+        height: min(370px, 102vw);
+      }
+
+      .hero-dancer-img {
+        max-height: 370px;
+      }
+
+      .tala-divider {
+        padding: 24px 20px;
+      }
+
+      .tala-triad {
+        font-size: 1rem;
+        gap: 12px;
+      }
+
+      .tala-triad span.line {
+        width: 24px;
+      }
+
+      .section,
+      .timeline-section,
+      .spotlight-section,
+      .archive-section {
+        padding: 72px 0;
+      }
+
+      .section-head {
+        margin-bottom: 36px;
+      }
+
+      .practice-item {
+        padding: 20px 0;
+      }
+
+      .practice-top {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 6px;
+      }
+
+      .practice-meta {
+        padding-left: 34px;
+        font-size: 0.72rem;
+      }
+
+      .practice-desc {
+        padding-left: 0;
+      }
+
+      .timeline-wrap {
+        padding-left: 28px;
+      }
+
+      .timeline-dot {
+        left: -28px;
+        width: 12px;
+        height: 12px;
+      }
+
+      .timeline-node {
+        padding-bottom: 38px;
+      }
+
+      .footer-minimal {
+        padding: 72px 0 44px;
+      }
+
+      .footer-actions {
+        flex-direction: column;
+        align-items: stretch;
+        margin-bottom: 48px;
       }
     }
   </style>
@@ -901,7 +1101,11 @@
           </h1>
 
           <div class="hero-pillars">
-            Bharatanatyam &nbsp;·&nbsp; Krishnamacharya Yoga &nbsp;·&nbsp; Vedic Chanting
+            <span>Bharatanatyam</span>
+            <span class="sep">·</span>
+            <span>Krishnamacharya Yoga</span>
+            <span class="sep">·</span>
+            <span>Vedic Chanting</span>
           </div>
 
           <p class="hero-lead">
