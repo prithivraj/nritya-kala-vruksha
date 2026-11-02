@@ -4,64 +4,30 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mohana Natarajan — Nritya Kalā Vrukṣa | Bharatanatyam, Yoga &amp; Vedic Chanting</title>
-  <meta name="description" content="Mohana Natarajan — Multidisciplinary Performing Artist, Bharatanatyam Exponent, Certified Yoga &amp; Vedic Chanting Teacher, and Artistic Director of Nritya Kalā Vrukṣa in Ireland." />
-  <meta property="og:title" content="Mohana Natarajan · Nritya Kalā Vrukṣa | Bharatanatyam, Yoga &amp; Vedic Chanting" />
-  <meta property="og:description" content="20+ years bridging classical South Indian Bharatanatyam, Krishnamacharya Yoga, and Vedic Chanting in Ireland (Leixlip, Newbridge &amp; Online)." />
+  <meta name="description" content="Mohana Natarajan — Bharatanatyam Exponent, Krishnamacharya Yoga &amp; Vedic Chanting Teacher, and Artistic Director of Nritya Kalā Vrukṣa in Ireland (Leixlip, Newbridge &amp; Online)." />
+  <meta property="og:title" content="Mohana Natarajan · Nritya Kalā Vrukṣa" />
+  <meta property="og:description" content="Bharatanatyam, Krishnamacharya Yoga &amp; Vedic Chanting in Ireland." />
   <meta property="og:image" content="assets/og-image.png" />
   <meta property="og:type" content="website" />
   <link rel="icon" type="image/png" href="assets/logo-gold.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Syne:wght@400;500;600&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "Person",
-        "name": "Mohana Natarajan",
-        "jobTitle": "Multidisciplinary Performing Artist, Bharatanatyam Exponent, Certified Yoga & Vedic Chanting Teacher",
-        "alumniOf": [
-          { "@type": "CollegeOrUniversity", "name": "University of Madras (M.A. Bharatanatyam & B.Com)" },
-          { "@type": "EducationalOrganization", "name": "Krishnamacharya Yoga Mandiram (KYM), Chennai" },
-          { "@type": "EducationalOrganization", "name": "Bharatha Choodamani Academy of Fine Arts" }
-        ],
-        "affiliation": {
-          "@type": "PerformingGroup",
-          "name": "Nritya Kalā Vrukṣa — Institution of Bharatanatyam and Yoga"
-        },
-        "address": {
-          "@type": "PostalAddress",
-          "addressLocality": "Newbridge & Leixlip, Co. Kildare / Dublin",
-          "addressCountry": "IE"
-        },
-        "sameAs": [
-          "https://www.instagram.com/natarajanmohana/",
-          "https://ie.linkedin.com/in/mohana-natarajan-9345616b",
-          "https://www.youtube.com/@bharatanatyam-mohananatara9535"
-        ]
-      }
-    ]
-  }
-  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
 
   <style>
     :root {
       --bg: #070506;
-      --bg-elevated: #0E0A0C;
-      --bg-glass: rgba(18, 12, 14, 0.65);
+      --bg-soft: #0D090B;
       --ivory: #FAF5EC;
-      --ivory-muted: rgba(250, 245, 236, 0.66);
-      --ivory-subtle: rgba(250, 245, 236, 0.38);
+      --ivory-muted: rgba(250, 245, 236, 0.64);
+      --ivory-dim: rgba(250, 245, 236, 0.38);
       --gold: #D8AD38;
       --gold-soft: #F3DC99;
       --gold-line: rgba(216, 173, 56, 0.22);
       --kaavi: #8C2719;
       --serif: 'Cormorant Garamond', Georgia, serif;
-      --display: 'Syne', sans-serif;
       --sans: 'Plus Jakarta Sans', -apple-system, sans-serif;
-      --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+      --ease: cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     * {
@@ -82,7 +48,6 @@
     body {
       background-color: var(--bg);
       overflow-x: hidden;
-      selection-background-color: var(--gold);
     }
 
     ::selection {
@@ -100,7 +65,7 @@
       max-width: 100%;
     }
 
-    /* Subtle tactile film grain + fixed sacred geometry canvas */
+    /* Ambient Fixed Canvas: Sacred Geometry & Warm Stage Glow */
     .ambient-canvas {
       position: fixed;
       inset: 0;
@@ -111,27 +76,26 @@
 
     .ambient-glow {
       position: absolute;
-      width: 68vw;
-      height: 68vw;
-      max-width: 900px;
-      max-height: 900px;
+      width: 72vw;
+      height: 72vw;
+      max-width: 920px;
+      max-height: 920px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(158, 42, 28, 0.14) 0%, rgba(130, 54, 96, 0.08) 42%, transparent 70%);
+      background: radial-gradient(circle, rgba(140, 39, 25, 0.14) 0%, rgba(130, 54, 96, 0.07) 45%, transparent 70%);
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
       filter: blur(60px);
-      will-change: transform;
     }
 
     .sacred-yantra-fixed {
       position: absolute;
       top: 50%;
       left: 50%;
-      width: min(82vw, 760px);
-      height: min(82vw, 760px);
+      width: min(82vw, 740px);
+      height: min(82vw, 740px);
       transform: translate(-50%, -50%);
-      opacity: 0.13;
+      opacity: 0.11;
       will-change: transform;
     }
 
@@ -140,57 +104,19 @@
       inset: 0;
       z-index: 999;
       pointer-events: none;
-      opacity: 0.038;
+      opacity: 0.032;
       mix-blend-mode: overlay;
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4'/%3E%3C/filter%3E%3Crect width='200' height='200' filter='url(%23n)'/%3E%3C/svg%3E");
     }
 
-    /* Custom Cursor Follower (Desktop) */
-    .cursor-ring {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 36px;
-      height: 36px;
-      border: 1px solid rgba(243, 220, 153, 0.45);
-      border-radius: 50%;
-      pointer-events: none;
-      z-index: 1000;
-      transform: translate(-50%, -50%);
-      transition: width 0.35s var(--ease-out-expo), height 0.35s var(--ease-out-expo), background 0.35s ease, border-color 0.35s ease;
-      mix-blend-mode: difference;
-    }
-
-    .cursor-ring.hovered {
-      width: 72px;
-      height: 72px;
-      background: rgba(243, 220, 153, 0.12);
-      border-color: var(--gold-soft);
-    }
-
-    @media (hover: none), (max-width: 900px) {
-      .cursor-ring { display: none; }
-    }
-
-    /* Scroll Progress Hairline */
-    .scroll-progress {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 2px;
-      background: linear-gradient(90deg, var(--kaavi), var(--gold), var(--gold-soft));
-      width: 0%;
-      z-index: 1001;
-    }
-
-    /* Minimal Floating Navigation */
+    /* Minimal Top Navigation */
     .nav-bar {
       position: fixed;
       top: 0;
       left: 0;
       right: 0;
       z-index: 500;
-      padding: 24px 4vw;
+      padding: 24px 5vw;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -199,10 +125,10 @@
     }
 
     .nav-bar.scrolled {
-      background: rgba(7, 5, 6, 0.82);
-      backdrop-filter: blur(18px);
-      -webkit-backdrop-filter: blur(18px);
-      padding: 14px 4vw;
+      background: rgba(7, 5, 6, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      padding: 14px 5vw;
       border-bottom: 1px solid rgba(216, 173, 56, 0.14);
     }
 
@@ -213,37 +139,17 @@
     }
 
     .nav-brand img {
-      width: 42px;
-      height: 42px;
+      width: 40px;
+      height: 40px;
       object-fit: contain;
-      transition: transform 0.6s var(--ease-out-expo);
-    }
-
-    .nav-brand:hover img {
-      transform: rotate(25deg) scale(1.06);
-    }
-
-    .nav-brand-text {
-      display: flex;
-      flex-direction: column;
     }
 
     .nav-brand-title {
       font-family: var(--serif);
-      font-size: 1.15rem;
+      font-size: 1.12rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
-      font-weight: 500;
       color: var(--ivory);
-      line-height: 1;
-    }
-
-    .nav-brand-sub {
-      font-size: 0.65rem;
-      letter-spacing: 0.24em;
-      text-transform: uppercase;
-      color: var(--gold-soft);
-      margin-top: 4px;
     }
 
     .nav-links {
@@ -255,61 +161,39 @@
 
     .nav-links a {
       font-family: var(--serif);
-      font-size: 0.98rem;
-      letter-spacing: 0.16em;
+      font-size: 0.96rem;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--ivory-muted);
-      position: relative;
-      padding: 4px 0;
       transition: color 0.3s ease;
     }
 
-    .nav-links a::after {
-      content: "";
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 1px;
-      background: var(--gold-soft);
-      transform: scaleX(0);
-      transform-origin: right;
-      transition: transform 0.4s var(--ease-out-expo);
-    }
-
     .nav-links a:hover {
-      color: var(--ivory);
+      color: var(--gold-soft);
     }
 
-    .nav-links a:hover::after {
-      transform: scaleX(1);
-      transform-origin: left;
-    }
-
-    .nav-pill {
+    .nav-insta {
       display: inline-flex;
       align-items: center;
       gap: 8px;
-      padding: 10px 22px;
-      border: 1px solid rgba(243, 220, 153, 0.38);
+      padding: 9px 22px;
+      border: 1px solid rgba(243, 220, 153, 0.35);
       border-radius: 999px;
       font-family: var(--serif);
-      font-size: 0.88rem;
+      font-size: 0.86rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       color: var(--gold-soft);
-      background: rgba(216, 173, 56, 0.06);
-      transition: all 0.35s var(--ease-out-expo);
+      transition: all 0.35s var(--ease);
     }
 
-    .nav-pill:hover {
+    .nav-insta:hover {
       background: var(--gold);
       color: var(--bg);
       border-color: var(--gold);
-      transform: translateY(-2px);
     }
 
-    /* Layout Containers */
+    /* Layout Helpers */
     main {
       position: relative;
       z-index: 2;
@@ -317,14 +201,14 @@
 
     .wrap {
       width: 100%;
-      max-width: 1360px;
+      max-width: 1240px;
       margin: 0 auto;
-      padding: 0 4vw;
+      padding: 0 5vw;
     }
 
     .micro-label {
       font-family: var(--serif);
-      font-size: 0.84rem;
+      font-size: 0.82rem;
       letter-spacing: 0.28em;
       text-transform: uppercase;
       color: var(--gold-soft);
@@ -335,16 +219,15 @@
 
     .micro-label::before {
       content: "";
-      width: 28px;
+      width: 26px;
       height: 1px;
       background: var(--gold);
     }
 
-    /* Scroll Reveal Animations */
     .reveal {
       opacity: 0;
-      transform: translateY(36px);
-      transition: opacity 1s var(--ease-out-expo), transform 1s var(--ease-out-expo);
+      transform: translateY(30px);
+      transition: opacity 1s var(--ease), transform 1s var(--ease);
     }
 
     .reveal.visible {
@@ -353,40 +236,20 @@
     }
 
     /* ==========================================
-       1. PARALLAX HERO SECTION
+       1. HERO SECTION (PURE ABHINAYA POSE, NO TOGGLE)
        ========================================== */
     .hero {
       position: relative;
-      min-height: 100vh;
+      min-height: 96vh;
       display: flex;
       align-items: center;
-      padding: 130px 0 80px;
+      padding: 130px 0 70px;
       overflow: hidden;
     }
 
-    /* Oversized Parallax Watermark Text Behind Hero */
-    .hero-bg-word {
-      position: absolute;
-      top: 24%;
-      left: -2vw;
-      font-family: var(--serif);
-      font-style: italic;
-      font-weight: 300;
-      font-size: clamp(8rem, 21vw, 22rem);
-      line-height: 0.8;
-      color: rgba(250, 245, 236, 0.028);
-      white-space: nowrap;
-      pointer-events: none;
-      user-select: none;
-      will-change: transform;
-      z-index: 1;
-    }
-
     .hero-grid {
-      position: relative;
-      z-index: 3;
       display: grid;
-      grid-template-columns: 1.15fr 0.85fr;
+      grid-template-columns: 1.1fr 0.9fr;
       gap: 4vw;
       align-items: center;
     }
@@ -394,11 +257,10 @@
     .hero-title {
       font-family: var(--serif);
       font-weight: 300;
-      font-size: clamp(3.6rem, 7.6vw, 7.2rem);
+      font-size: clamp(3.8rem, 7.5vw, 6.8rem);
       line-height: 0.92;
-      letter-spacing: -0.02em;
       color: var(--ivory);
-      margin: 18px 0 24px;
+      margin: 18px 0 22px;
     }
 
     .hero-title em {
@@ -406,109 +268,92 @@
       font-style: italic;
       font-weight: 400;
       color: var(--gold-soft);
-      padding-left: 4vw;
+      padding-left: 3.5vw;
     }
 
-    .hero-pillars-strip {
-      display: flex;
-      flex-wrap: wrap;
-      align-items: center;
-      gap: 14px;
-      margin-bottom: 28px;
+    .hero-pillars {
       font-family: var(--serif);
-      font-size: clamp(1.05rem, 1.5vw, 1.35rem);
-      letter-spacing: 0.14em;
+      font-size: 1.15rem;
+      letter-spacing: 0.18em;
       text-transform: uppercase;
-      color: var(--ivory);
-    }
-
-    .hero-pillars-strip span.dot {
-      color: var(--gold);
-      font-size: 0.9rem;
+      color: var(--gold-soft);
+      margin-bottom: 24px;
     }
 
     .hero-lead {
-      font-size: 1.05rem;
+      font-size: 1.04rem;
       font-weight: 300;
-      line-height: 1.8;
+      line-height: 1.82;
       color: var(--ivory-muted);
-      max-width: 540px;
-    }
-
-    .hero-lead strong {
-      color: var(--ivory);
-      font-weight: 500;
+      max-width: 500px;
     }
 
     .hero-cta-row {
       display: flex;
       flex-wrap: wrap;
       align-items: center;
-      gap: 18px;
+      gap: 16px;
       margin-top: 38px;
     }
 
     .btn-gold {
       display: inline-flex;
       align-items: center;
-      gap: 12px;
-      padding: 16px 34px;
+      gap: 10px;
+      padding: 15px 32px;
       background: var(--gold);
       color: var(--bg);
       font-family: var(--serif);
-      font-size: 0.98rem;
+      font-size: 0.94rem;
       font-weight: 600;
       letter-spacing: 0.2em;
       text-transform: uppercase;
       border-radius: 999px;
-      transition: all 0.4s var(--ease-out-expo);
+      transition: all 0.35s var(--ease);
     }
 
     .btn-gold:hover {
       background: var(--gold-soft);
-      transform: translateY(-3px);
-      box-shadow: 0 16px 40px rgba(216, 173, 56, 0.26);
+      transform: translateY(-2px);
     }
 
     .btn-ghost {
       display: inline-flex;
       align-items: center;
       gap: 10px;
-      padding: 16px 30px;
-      border: 1px solid rgba(250, 245, 236, 0.24);
+      padding: 15px 28px;
+      border: 1px solid rgba(250, 245, 236, 0.22);
       color: var(--ivory);
       font-family: var(--serif);
-      font-size: 0.98rem;
+      font-size: 0.94rem;
       letter-spacing: 0.18em;
       text-transform: uppercase;
       border-radius: 999px;
-      transition: all 0.4s var(--ease-out-expo);
+      transition: all 0.35s var(--ease);
     }
 
     .btn-ghost:hover {
       border-color: var(--gold-soft);
       color: var(--gold-soft);
-      transform: translateY(-3px);
+      transform: translateY(-2px);
     }
 
     /* Sculptural Parallax Cutout Stage */
     .hero-stage {
       position: relative;
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      min-height: 580px;
+      min-height: 540px;
     }
 
     .sacred-arch {
       position: absolute;
-      width: 380px;
-      height: 490px;
-      border-radius: 200px 200px 8px 8px;
-      border: 1px solid rgba(243, 220, 153, 0.32);
-      background: linear-gradient(180deg, rgba(140, 39, 25, 0.24) 0%, rgba(14, 10, 12, 0.6) 100%);
-      box-shadow: inset 0 0 80px rgba(216, 173, 56, 0.08);
+      width: 360px;
+      height: 470px;
+      border-radius: 190px 190px 6px 6px;
+      border: 1px solid rgba(243, 220, 153, 0.3);
+      background: linear-gradient(180deg, rgba(140, 39, 25, 0.22) 0%, rgba(14, 10, 12, 0.55) 100%);
       will-change: transform;
     }
 
@@ -516,17 +361,17 @@
       content: "";
       position: absolute;
       inset: 10px;
-      border-radius: 190px 190px 4px 4px;
-      border: 1px solid rgba(243, 220, 153, 0.12);
+      border-radius: 180px 180px 4px 4px;
+      border: 1px solid rgba(243, 220, 153, 0.11);
     }
 
     .sun-halo {
       position: absolute;
-      top: 12%;
-      width: 240px;
-      height: 240px;
+      top: 10%;
+      width: 230px;
+      height: 230px;
       border-radius: 50%;
-      background: radial-gradient(circle, rgba(216, 173, 56, 0.28) 0%, rgba(140, 39, 25, 0.12) 55%, transparent 72%);
+      background: radial-gradient(circle, rgba(216, 173, 56, 0.26) 0%, rgba(140, 39, 25, 0.1) 55%, transparent 72%);
       will-change: transform;
     }
 
@@ -534,7 +379,7 @@
       position: relative;
       z-index: 4;
       width: 100%;
-      max-width: 470px;
+      max-width: 460px;
       display: flex;
       justify-content: center;
       will-change: transform;
@@ -542,823 +387,470 @@
 
     .hero-dancer-img {
       width: 100%;
-      max-height: 540px;
+      max-height: 510px;
       object-fit: contain;
       filter: drop-shadow(0 28px 44px rgba(0, 0, 0, 0.92)) drop-shadow(0 0 28px rgba(216, 173, 56, 0.18));
-      transition: opacity 0.4s ease, transform 0.6s var(--ease-out-expo);
-    }
-
-    .pose-Dock {
-      position: relative;
-      z-index: 6;
-      margin-top: 22px;
-      display: inline-flex;
-      align-items: center;
-      gap: 6px;
-      padding: 5px;
-      background: rgba(14, 10, 12, 0.85);
-      border: 1px solid rgba(243, 220, 153, 0.22);
-      border-radius: 999px;
-      backdrop-filter: blur(10px);
-    }
-
-    .pose-chip {
-      background: transparent;
-      border: none;
-      color: var(--ivory-muted);
-      font-family: var(--serif);
-      font-size: 0.8rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      padding: 7px 16px;
-      border-radius: 999px;
-      cursor: pointer;
-      transition: all 0.25s ease;
-    }
-
-    .pose-chip.active {
-      background: var(--gold);
-      color: var(--bg);
-      font-weight: 600;
-    }
-
-    /* Kinetic Marquee Ribbon */
-    .marquee-strip {
-      position: relative;
-      z-index: 3;
-      border-top: 1px solid var(--gold-line);
-      border-bottom: 1px solid var(--gold-line);
-      padding: 18px 0;
-      overflow: hidden;
-      background: rgba(14, 10, 12, 0.7);
-      display: flex;
-      white-space: nowrap;
-    }
-
-    .marquee-track {
-      display: flex;
-      align-items: center;
-      gap: 42px;
-      animation: marqueeScroll 38s linear infinite;
-      font-family: var(--serif);
-      font-size: 1.05rem;
-      letter-spacing: 0.24em;
-      text-transform: uppercase;
-      color: var(--ivory-muted);
-    }
-
-    .marquee-track span.star {
-      color: var(--gold);
-    }
-
-    @keyframes marqueeScroll {
-      from { transform: translateX(0); }
-      to { transform: translateX(-50%); }
     }
 
     /* ==========================================
-       2. THE 4 SACRED PRACTICES (MINIMAL ACCORDION / INTERACTIVE STUDIO)
+       POETIC TALA BREATH DIVIDER (REPLACES TICKER)
        ========================================== */
-    .practices-section {
-      padding: 130px 0;
+    .tala-divider {
+      padding: 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      text-align: center;
       position: relative;
     }
 
-    .section-top {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      gap: 32px;
-      margin-bottom: 64px;
-      border-bottom: 1px solid var(--gold-line);
-      padding-bottom: 32px;
+    .tala-lotus {
+      width: 56px;
+      height: 56px;
+      opacity: 0.72;
+      will-change: transform;
     }
 
-    .section-heading {
+    .tala-triad {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 28px;
+      font-family: var(--serif);
+      font-style: italic;
+      font-size: clamp(1.25rem, 2.2vw, 1.65rem);
+      color: var(--gold-soft);
+      letter-spacing: 0.08em;
+    }
+
+    .tala-triad span.line {
+      width: 48px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold-line), transparent);
+    }
+
+    /* ==========================================
+       2. DISCIPLINES & OFFERINGS (MINIMAL INTERACTIVE)
+       ========================================== */
+    .section {
+      padding: 110px 0;
+      position: relative;
+    }
+
+    .section-head {
+      margin-bottom: 56px;
+    }
+
+    .section-title {
       font-family: var(--serif);
       font-weight: 300;
-      font-size: clamp(2.6rem, 4.8vw, 4.4rem);
-      line-height: 1.02;
+      font-size: clamp(2.5rem, 4.5vw, 4rem);
+      line-height: 1.04;
       color: var(--ivory);
-      margin-top: 12px;
+      margin-top: 10px;
     }
 
-    .section-heading em {
+    .section-title em {
       font-style: italic;
       color: var(--gold-soft);
     }
 
-    .section-note {
-      max-width: 380px;
-      font-size: 0.95rem;
-      color: var(--ivory-muted);
-      font-weight: 300;
-      line-height: 1.7;
-    }
-
-    /* Interactive 4-Pillar Editorial List */
-    .pillars-interactive {
+    .practices-layout {
       display: grid;
-      grid-template-columns: 1.2fr 0.8fr;
+      grid-template-columns: 1.15fr 0.85fr;
       gap: 5vw;
       align-items: center;
     }
 
-    .pillar-row {
-      border-bottom: 1px solid rgba(250, 245, 236, 0.12);
-      padding: 30px 0;
+    .practice-item {
+      border-bottom: 1px solid rgba(250, 245, 236, 0.11);
+      padding: 28px 0;
       cursor: pointer;
       transition: border-color 0.35s ease;
     }
 
-    .pillar-row:hover,
-    .pillar-row.active {
+    .practice-item:first-child {
+      border-top: 1px solid rgba(250, 245, 236, 0.11);
+    }
+
+    .practice-item:hover,
+    .practice-item.active {
       border-bottom-color: var(--gold);
     }
 
-    .pillar-header {
+    .practice-top {
       display: flex;
       align-items: baseline;
       justify-content: space-between;
-      gap: 20px;
+      gap: 16px;
     }
 
-    .pillar-left {
-      display: flex;
-      align-items: baseline;
-      gap: 24px;
-    }
-
-    .pillar-index {
+    .practice-num {
       font-family: var(--serif);
       font-style: italic;
-      font-size: 1.3rem;
+      font-size: 1.2rem;
       color: var(--gold);
-      min-width: 32px;
+      margin-right: 20px;
     }
 
-    .pillar-name {
+    .practice-name {
       font-family: var(--serif);
       font-weight: 400;
-      font-size: clamp(1.85rem, 3vw, 2.75rem);
+      font-size: clamp(1.75rem, 2.8vw, 2.45rem);
       color: var(--ivory);
-      transition: color 0.3s ease, transform 0.4s var(--ease-out-expo);
+      transition: color 0.3s ease, transform 0.4s var(--ease);
     }
 
-    .pillar-row:hover .pillar-name,
-    .pillar-row.active .pillar-name {
+    .practice-item:hover .practice-name,
+    .practice-item.active .practice-name {
       color: var(--gold-soft);
-      transform: translateX(8px);
+      transform: translateX(6px);
     }
 
-    .pillar-tag {
+    .practice-meta {
       font-family: var(--serif);
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       letter-spacing: 0.2em;
       text-transform: uppercase;
-      color: var(--ivory-subtle);
+      color: var(--ivory-dim);
       white-space: nowrap;
     }
 
-    .pillar-body {
+    .practice-desc {
       max-height: 0;
       overflow: hidden;
       opacity: 0;
-      transition: max-height 0.55s var(--ease-out-expo), opacity 0.45s ease, margin-top 0.45s ease;
-      padding-left: 56px;
+      transition: max-height 0.5s var(--ease), opacity 0.4s ease, margin-top 0.4s ease;
+      padding-left: 44px;
     }
 
-    .pillar-row.active .pillar-body {
-      max-height: 260px;
+    .practice-item.active .practice-desc {
+      max-height: 180px;
       opacity: 1;
-      margin-top: 16px;
+      margin-top: 12px;
     }
 
-    .pillar-body p {
-      font-size: 0.98rem;
+    .practice-desc p {
+      font-size: 0.96rem;
       color: var(--ivory-muted);
       line-height: 1.75;
       font-weight: 300;
-      max-width: 560px;
+      max-width: 520px;
     }
 
-    .pillar-meta-pills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
-      margin-top: 16px;
-    }
-
-    .pillar-meta-pills span {
-      font-family: var(--serif);
-      font-size: 0.8rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      padding: 5px 14px;
-      border: 1px solid rgba(243, 220, 153, 0.28);
-      border-radius: 999px;
-      color: var(--gold-soft);
-    }
-
-    /* Visual Preview Frame on the Right */
-    .pillar-preview-stage {
+    .practice-visual-arch {
       position: relative;
       aspect-ratio: 4 / 5;
-      border-radius: 180px 180px 6px 6px;
+      max-width: 420px;
+      margin: 0 auto;
+      border-radius: 200px 200px 6px 6px;
       overflow: hidden;
-      border: 1px solid rgba(243, 220, 153, 0.32);
-      background: #110B0D;
-      box-shadow: 0 32px 80px rgba(0, 0, 0, 0.8);
+      border: 1px solid rgba(243, 220, 153, 0.3);
+      background: #0F0A0C;
+      box-shadow: 0 28px 70px rgba(0, 0, 0, 0.78);
     }
 
-    .pillar-preview-stage img {
+    .practice-visual-arch img {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      transition: transform 0.85s var(--ease-out-expo), opacity 0.45s ease;
-    }
-
-    .pillar-preview-caption {
-      position: absolute;
-      left: 20px;
-      right: 20px;
-      bottom: 20px;
-      padding: 14px 18px;
-      background: rgba(7, 5, 6, 0.82);
-      backdrop-filter: blur(12px);
-      border: 1px solid rgba(243, 220, 153, 0.22);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      font-family: var(--serif);
-      font-size: 0.85rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--gold-soft);
+      transition: opacity 0.4s ease, transform 0.8s var(--ease);
     }
 
     /* ==========================================
-       3. LINEAGE, PEDIGREE & DIPLOMACY (SCULPTURAL BENTO)
+       3. VERTICAL LINEAGE & JOURNEY TIMELINE
        ========================================== */
-    .lineage-section {
-      padding: 120px 0;
-      position: relative;
+    .timeline-section {
+      padding: 110px 0;
       border-top: 1px solid var(--gold-line);
-      background: linear-gradient(180deg, rgba(14, 10, 12, 0.5) 0%, rgba(7, 5, 6, 0.95) 100%);
     }
 
-    .lineage-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 20px;
+    .timeline-wrap {
+      position: relative;
+      max-width: 860px;
+      margin: 0 auto;
+      padding-left: 44px;
     }
 
-    .pedigree-card {
-      background: rgba(18, 12, 15, 0.55);
-      border: 1px solid rgba(243, 220, 153, 0.18);
-      padding: 34px 28px;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      min-height: 290px;
-      transition: transform 0.45s var(--ease-out-expo), border-color 0.45s ease, background 0.45s ease;
+    /* Vertical golden thread of Parampara (Lineage) */
+    .timeline-wrap::before {
+      content: "";
+      position: absolute;
+      left: 7px;
+      top: 8px;
+      bottom: 8px;
+      width: 1px;
+      background: linear-gradient(180deg, var(--gold) 0%, rgba(216, 173, 56, 0.35) 85%, transparent 100%);
     }
 
-    .pedigree-card:hover {
-      transform: translateY(-6px);
-      border-color: var(--gold);
-      background: rgba(28, 16, 20, 0.72);
+    .timeline-node {
+      position: relative;
+      padding-bottom: 54px;
     }
 
-    .pedigree-eyebrow {
+    .timeline-node:last-child {
+      padding-bottom: 0;
+    }
+
+    .timeline-dot {
+      position: absolute;
+      left: -44px;
+      top: 6px;
+      width: 15px;
+      height: 15px;
+      transform: rotate(45deg);
+      background: var(--bg);
+      border: 1px solid var(--gold);
+      transition: background 0.35s ease, transform 0.35s ease;
+    }
+
+    .timeline-node:hover .timeline-dot {
+      background: var(--gold);
+      transform: rotate(45deg) scale(1.2);
+    }
+
+    .timeline-era {
       font-family: var(--serif);
-      font-size: 0.76rem;
+      font-size: 0.8rem;
       letter-spacing: 0.24em;
       text-transform: uppercase;
       color: var(--gold);
-      margin-bottom: 18px;
       display: block;
+      margin-bottom: 6px;
     }
 
-    .pedigree-card h3 {
+    .timeline-title {
       font-family: var(--serif);
       font-weight: 400;
-      font-size: 1.65rem;
-      line-height: 1.18;
+      font-size: clamp(1.65rem, 2.5vw, 2.15rem);
       color: var(--ivory);
-      margin-bottom: 14px;
+      margin-bottom: 8px;
+      line-height: 1.2;
     }
 
-    .pedigree-card p {
-      font-size: 0.9rem;
+    .timeline-text {
+      font-size: 0.96rem;
       color: var(--ivory-muted);
-      line-height: 1.68;
+      line-height: 1.75;
       font-weight: 300;
-    }
-
-    .pedigree-foot {
-      margin-top: 24px;
-      padding-top: 14px;
-      border-top: 1px solid rgba(250, 245, 236, 0.08);
-      font-family: var(--serif);
-      font-size: 0.8rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--gold-soft);
+      max-width: 660px;
     }
 
     /* ==========================================
-       4. FEATURED PREMIERE SPOTLIGHT: THE MADRAS CONCERT
+       4. UPCOMING SHOWCASE (ULTRA-CLEAN POSTER SPOTLIGHT)
        ========================================== */
-    .premiere-section {
-      padding: 130px 0;
+    .spotlight-section {
+      padding: 110px 0;
+      border-top: 1px solid var(--gold-line);
       position: relative;
       overflow: hidden;
-      border-top: 1px solid var(--gold-line);
-      border-bottom: 1px solid var(--gold-line);
     }
 
-    .premiere-watermark {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: min(980px, 94vw);
-      opacity: 0.11;
-      pointer-events: none;
+    .spotlight-grid {
+      display: grid;
+      grid-template-columns: 0.85fr 1.15fr;
+      gap: 5vw;
+      align-items: center;
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+
+    .spotlight-poster {
+      border: 1px solid rgba(243, 220, 153, 0.34);
+      box-shadow: 0 28px 64px rgba(0, 0, 0, 0.85);
+      overflow: hidden;
       will-change: transform;
     }
 
-    .premiere-showcase {
-      position: relative;
-      z-index: 3;
-      display: grid;
-      grid-template-columns: 0.88fr 1.12fr;
-      gap: 5vw;
-      align-items: center;
-      background: rgba(12, 8, 10, 0.78);
-      border: 1px solid rgba(243, 220, 153, 0.28);
-      padding: 48px;
-      backdrop-filter: blur(14px);
-    }
-
-    .premiere-poster-col {
-      position: relative;
-    }
-
-    .premiere-poster-wrap {
-      border: 1px solid rgba(243, 220, 153, 0.35);
-      overflow: hidden;
-      box-shadow: 0 28px 64px rgba(0, 0, 0, 0.85);
-    }
-
-    .poster-switch-strip {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-top: 12px;
-      font-family: var(--serif);
-      font-size: 0.8rem;
-      letter-spacing: 0.16em;
-      text-transform: uppercase;
-      color: var(--ivory-subtle);
-    }
-
-    .poster-switch-strip div {
-      display: flex;
-      gap: 6px;
-    }
-
-    .poster-switch-strip button {
-      background: transparent;
-      border: 1px solid rgba(243, 220, 153, 0.26);
-      color: var(--ivory-muted);
-      padding: 4px 12px;
-      font-family: var(--serif);
-      font-size: 0.76rem;
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      cursor: pointer;
-    }
-
-    .poster-switch-strip button.active {
-      background: var(--gold);
-      color: var(--bg);
-      border-color: var(--gold);
-      font-weight: 600;
-    }
-
-    .premiere-title {
+    .spotlight-title {
       font-family: var(--serif);
       font-style: italic;
       font-weight: 400;
-      font-size: clamp(2.8rem, 4.8vw, 4.5rem);
-      line-height: 0.96;
+      font-size: clamp(2.8rem, 4.8vw, 4.2rem);
+      line-height: 0.98;
       color: var(--ivory);
-      margin: 12px 0 18px;
+      margin: 12px 0 16px;
     }
 
-    .premiere-date-bar {
-      padding: 12px 0;
-      border-top: 1px solid rgba(243, 220, 153, 0.35);
-      border-bottom: 1px solid rgba(243, 220, 153, 0.35);
+    .spotlight-meta {
       font-family: var(--serif);
-      font-size: 1.12rem;
-      letter-spacing: 0.18em;
+      font-size: 1.15rem;
+      letter-spacing: 0.16em;
       text-transform: uppercase;
       color: var(--gold-soft);
+      padding: 12px 0;
+      border-top: 1px solid rgba(243, 220, 153, 0.25);
+      border-bottom: 1px solid rgba(243, 220, 153, 0.25);
       margin-bottom: 22px;
     }
 
-    .premiere-copy {
+    .spotlight-summary {
       font-size: 0.98rem;
       color: var(--ivory-muted);
       line-height: 1.78;
       font-weight: 300;
-      margin-bottom: 24px;
-    }
-
-    .premiere-copy strong {
-      color: var(--ivory);
-      font-weight: 500;
-    }
-
-    .premiere-meta-row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-      padding: 18px 0;
-      border-top: 1px solid rgba(250, 245, 236, 0.1);
-      border-bottom: 1px solid rgba(250, 245, 236, 0.1);
-      margin-bottom: 28px;
-    }
-
-    .premiere-meta-row small {
-      display: block;
-      font-family: var(--serif);
-      font-size: 0.72rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 4px;
-    }
-
-    .premiere-meta-row span {
-      font-family: var(--serif);
-      font-size: 1.05rem;
-      color: var(--ivory);
+      margin-bottom: 30px;
+      max-width: 480px;
     }
 
     /* ==========================================
-       5. CURATED VISUAL GALLERY & PLACEHOLDER CANVAS
-       ========================================== */
-    .gallery-section {
-      padding: 130px 0;
-      position: relative;
-    }
-
-    .parallax-gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(12, 1fr);
-      gap: 24px;
-      align-items: start;
-    }
-
-    .gallery-card {
-      position: relative;
-      overflow: hidden;
-      border: 1px solid rgba(243, 220, 153, 0.2);
-      background: #0F0A0C;
-      group: true;
-    }
-
-    .gallery-card img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform 0.9s var(--ease-out-expo), filter 0.6s ease;
-    }
-
-    .gallery-card:hover img {
-      transform: scale(1.05);
-    }
-
-    .gallery-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, transparent 45%, rgba(7, 5, 6, 0.92) 100%);
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      padding: 24px;
-    }
-
-    .gallery-tag {
-      font-family: var(--serif);
-      font-size: 0.74rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--gold-soft);
-      margin-bottom: 4px;
-    }
-
-    .gallery-caption {
-      font-family: var(--serif);
-      font-size: 1.35rem;
-      color: var(--ivory);
-      font-weight: 400;
-    }
-
-    /* Asymmetric Parallax Spanning */
-    .g-col-5 { grid-column: span 5; aspect-ratio: 4 / 5; }
-    .g-col-7 { grid-column: span 7; aspect-ratio: 16 / 10; margin-top: 64px; }
-    .g-col-4 { grid-column: span 4; aspect-ratio: 3 / 4; }
-    .g-col-4-offset { grid-column: span 4; aspect-ratio: 3 / 4; margin-top: 48px; }
-    .g-col-4-slot { grid-column: span 4; aspect-ratio: 3 / 4; margin-top: 16px; }
-
-    /* Interactive Drop-In Photo Slot for Future Photos */
-    .gallery-placeholder-slot {
-      border: 1px dashed rgba(243, 220, 153, 0.38);
-      background: radial-gradient(circle at 50% 50%, rgba(216, 173, 56, 0.07), rgba(14, 10, 12, 0.85));
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      padding: 32px;
-      cursor: pointer;
-      position: relative;
-      overflow: hidden;
-      transition: border-color 0.35s ease, background 0.35s ease;
-    }
-
-    .gallery-placeholder-slot:hover {
-      border-color: var(--gold);
-      background: radial-gradient(circle at 50% 50%, rgba(216, 173, 56, 0.14), rgba(14, 10, 12, 0.92));
-    }
-
-    .slot-icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 50%;
-      border: 1px solid var(--gold);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--gold-soft);
-      font-size: 1.4rem;
-      margin-bottom: 16px;
-    }
-
-    /* ==========================================
-       6. SELECTED PERFORMANCE ARCHIVE (MINIMAL LEDGER)
+       5. SELECTED STAGE & VIDEO ARCHIVE
        ========================================== */
     .archive-section {
-      padding: 100px 0 130px;
+      padding: 110px 0;
       border-top: 1px solid var(--gold-line);
     }
 
-    .archive-table {
-      width: 100%;
-      border-collapse: collapse;
+    .archive-list {
+      border-top: 1px solid rgba(250, 245, 236, 0.11);
     }
 
     .archive-row {
       display: grid;
-      grid-template-columns: 0.9fr 1.6fr 1.5fr;
-      gap: 24px;
+      grid-template-columns: 0.8fr 1.5fr 1.3fr auto;
+      gap: 20px;
       padding: 22px 0;
-      border-bottom: 1px solid rgba(250, 245, 236, 0.1);
+      border-bottom: 1px solid rgba(250, 245, 236, 0.11);
       align-items: baseline;
-      transition: padding-left 0.35s var(--ease-out-expo), border-color 0.35s ease;
+      transition: padding-left 0.35s var(--ease), border-color 0.35s ease;
     }
 
     .archive-row:hover {
-      padding-left: 14px;
+      padding-left: 12px;
       border-bottom-color: var(--gold);
     }
 
-    .arch-region {
+    .arch-loc {
       font-family: var(--serif);
-      font-size: 0.84rem;
+      font-size: 0.82rem;
       letter-spacing: 0.22em;
       text-transform: uppercase;
       color: var(--gold);
     }
 
-    .arch-venue {
+    .arch-event {
       font-family: var(--serif);
-      font-size: 1.45rem;
+      font-size: 1.4rem;
       color: var(--ivory);
     }
 
-    .arch-role {
-      font-size: 0.92rem;
+    .arch-note {
+      font-size: 0.9rem;
       color: var(--ivory-muted);
       font-weight: 300;
     }
 
+    .arch-watch {
+      font-family: var(--serif);
+      font-size: 0.8rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-soft);
+      padding: 5px 14px;
+      border: 1px solid rgba(243, 220, 153, 0.28);
+      border-radius: 999px;
+      white-space: nowrap;
+      transition: all 0.25s ease;
+    }
+
+    .archive-row:hover .arch-watch {
+      background: var(--gold);
+      color: var(--bg);
+      border-color: var(--gold);
+    }
+
     /* ==========================================
-       7. MINIMAL CONCIERGE & SOCIAL PORTAL FOOTER
+       6. MINIMAL FOOTER (INSTAGRAM & YOUTUBE ONLY)
        ========================================== */
-    .portal-footer {
-      padding: 120px 0 60px;
+    .footer-minimal {
+      padding: 110px 0 60px;
       border-top: 1px solid var(--gold-line);
+      text-align: center;
       background:
-        radial-gradient(55% 50% at 50% 100%, rgba(140, 39, 25, 0.24), transparent 70%),
+        radial-gradient(50% 50% at 50% 100%, rgba(140, 39, 25, 0.22), transparent 70%),
         #050304;
     }
 
-    .portal-grid {
-      display: grid;
-      grid-template-columns: 1.1fr 0.9fr;
-      gap: 6vw;
-      align-items: start;
-      margin-bottom: 90px;
+    .footer-emblem {
+      width: 68px;
+      height: 68px;
+      margin: 0 auto 22px;
+      opacity: 0.9;
     }
 
-    .portal-headline {
+    .footer-heading {
       font-family: var(--serif);
       font-weight: 300;
-      font-size: clamp(2.8rem, 5.2vw, 4.8rem);
-      line-height: 0.98;
+      font-size: clamp(2.6rem, 5vw, 4.4rem);
+      line-height: 1.02;
       color: var(--ivory);
-      margin: 16px 0 24px;
+      margin-bottom: 14px;
     }
 
-    .portal-headline em {
+    .footer-heading em {
       font-style: italic;
       color: var(--gold-soft);
     }
 
-    .social-hub-cards {
-      display: grid;
-      grid-template-columns: 1fr;
-      gap: 14px;
-      margin-top: 32px;
-    }
-
-    .social-card {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 20px 24px;
-      border: 1px solid rgba(243, 220, 153, 0.22);
-      background: rgba(18, 12, 15, 0.55);
-      transition: all 0.35s var(--ease-out-expo);
-    }
-
-    .social-card:hover {
-      border-color: var(--gold);
-      background: rgba(216, 173, 56, 0.1);
-      transform: translateX(6px);
-    }
-
-    .social-card-left small {
-      display: block;
+    .footer-locations {
       font-family: var(--serif);
-      font-size: 0.74rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--gold);
-    }
-
-    .social-card-left strong {
-      font-family: var(--serif);
-      font-size: 1.35rem;
-      font-weight: 400;
-      color: var(--ivory);
-    }
-
-    .concierge-card {
-      border: 1px solid rgba(243, 220, 153, 0.28);
-      background: rgba(14, 10, 12, 0.85);
-      padding: 40px;
-    }
-
-    .concierge-card h3 {
-      font-family: var(--serif);
-      font-weight: 400;
-      font-size: 1.9rem;
-      color: var(--ivory);
-      margin-bottom: 8px;
-    }
-
-    .concierge-card p {
-      font-size: 0.9rem;
-      color: var(--ivory-muted);
-      margin-bottom: 24px;
-      font-weight: 300;
-    }
-
-    .field {
-      margin-bottom: 18px;
-    }
-
-    .field label {
-      display: block;
-      font-family: var(--serif);
-      font-size: 0.76rem;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: var(--gold-soft);
-      margin-bottom: 6px;
-    }
-
-    .field input,
-    .field select,
-    .field textarea {
-      width: 100%;
-      background: transparent;
-      border: none;
-      border-bottom: 1px solid rgba(250, 245, 236, 0.24);
-      padding: 10px 0;
-      color: var(--ivory);
-      font-family: var(--sans);
       font-size: 0.95rem;
-      transition: border-color 0.3s ease;
-      border-radius: 0;
+      letter-spacing: 0.24em;
+      text-transform: uppercase;
+      color: var(--ivory-muted);
+      margin-bottom: 38px;
     }
 
-    .field select option {
-      background: #0E0A0C;
-      color: var(--ivory);
-    }
-
-    .field input:focus,
-    .field select:focus,
-    .field textarea:focus {
-      outline: none;
-      border-bottom-color: var(--gold);
-    }
-
-    .footer-bottom {
-      padding-top: 36px;
-      border-top: 1px solid rgba(250, 245, 236, 0.1);
+    .footer-actions {
       display: flex;
+      justify-content: center;
       flex-wrap: wrap;
-      justify-content: space-between;
-      align-items: center;
-      gap: 20px;
-      font-size: 0.82rem;
-      color: var(--ivory-subtle);
+      gap: 18px;
+      margin-bottom: 72px;
     }
 
-    /* Responsive Adjustments */
-    @media (max-width: 1024px) {
+    .footer-copy {
+      padding-top: 32px;
+      border-top: 1px solid rgba(250, 245, 236, 0.08);
+      font-size: 0.8rem;
+      color: var(--ivory-dim);
+      letter-spacing: 0.06em;
+    }
+
+    /* Responsive */
+    @media (max-width: 960px) {
       .hero-grid,
-      .pillars-interactive,
-      .premiere-showcase,
-      .portal-grid {
+      .practices-layout,
+      .spotlight-grid {
         grid-template-columns: 1fr;
       }
 
-      .lineage-grid {
-        grid-template-columns: repeat(2, 1fr);
+      .archive-row {
+        grid-template-columns: 1fr;
+        gap: 6px;
       }
 
-      .g-col-5, .g-col-7, .g-col-4, .g-col-4-offset, .g-col-4-slot {
-        grid-column: span 6;
-        margin-top: 0;
+      .arch-watch {
+        justify-self: start;
+        margin-top: 6px;
       }
 
       .nav-links {
         display: none;
       }
     }
-
-    @media (max-width: 640px) {
-      .lineage-grid,
-      .premiere-meta-row,
-      .archive-row {
-        grid-template-columns: 1fr;
-      }
-
-      .g-col-5, .g-col-7, .g-col-4, .g-col-4-offset, .g-col-4-slot {
-        grid-column: span 12;
-      }
-
-      .premiere-showcase,
-      .concierge-card {
-        padding: 26px 20px;
-      }
-    }
   </style>
 </head>
 <body>
 
-  <!-- Scroll Progress Hairline -->
-  <div class="scroll-progress" id="scrollProgress"></div>
-
-  <!-- Custom Cursor Follower -->
-  <div class="cursor-ring" id="cursorRing"></div>
-
-  <!-- Tactile Grain Overlay -->
+  <!-- Subtle Film Grain -->
   <div class="grain-overlay"></div>
 
-  <!-- Fixed Ambient Sacred Geometry & Glow (Parallax Reactive) -->
+  <!-- Fixed Ambient Sacred Geometry Canvas -->
   <div class="ambient-canvas" aria-hidden="true">
-    <div class="ambient-glow" id="ambientGlow"></div>
+    <div class="ambient-glow"></div>
     <svg class="sacred-yantra-fixed" id="sacredYantra" viewBox="0 0 500 500" fill="none" stroke="#D8AD38" stroke-width="0.6">
       <circle cx="250" cy="250" r="242" opacity=".45" />
       <circle cx="250" cy="250" r="198" opacity=".35" />
@@ -1378,331 +870,242 @@
   <header class="nav-bar" id="navBar">
     <a href="#top" class="nav-brand">
       <img src="assets/logo-gold.png" alt="Nritya Kala Vruksha Emblem" />
-      <div class="nav-brand-text">
-        <span class="nav-brand-title">Mohana Natarajan</span>
-        <span class="nav-brand-sub">Nritya Kalā Vrukṣa · Ireland</span>
-      </div>
+      <span class="nav-brand-title">Mohana Natarajan</span>
     </a>
 
     <ul class="nav-links">
-      <li><a href="#offerings">Offerings</a></li>
+      <li><a href="#offerings">Practices</a></li>
       <li><a href="#lineage">Lineage</a></li>
-      <li><a href="#premiere">2027 Premiere</a></li>
-      <li><a href="#gallery">Visuals</a></li>
+      <li><a href="#premiere">2027 Concert</a></li>
       <li><a href="#archive">Archive</a></li>
     </ul>
 
-    <a href="#connect" class="nav-pill">Book a Class / Inquire</a>
+    <a href="https://www.instagram.com/natarajanmohana/" target="_blank" rel="noopener" class="nav-insta">
+      @natarajanmohana ↗
+    </a>
   </header>
 
   <main id="top">
     <!-- ==========================================
-         1. PARALLAX SCULPTURAL HERO
+         1. PARALLAX HERO (PURE ABHINAYA POSE)
          ========================================== -->
     <section class="hero">
-      <div class="hero-bg-word" data-parallax="-0.18" aria-hidden="true">Nritya · Yoga · Veda</div>
-
       <div class="wrap hero-grid">
         <div class="reveal visible">
-          <span class="micro-label">Artistic Director · Nritya Kalā Vrukṣa · Ireland</span>
+          <span class="micro-label">Nritya Kalā Vrukṣa · Ireland</span>
 
           <h1 class="hero-title">
             Mohana
             <em>Natarajan</em>
           </h1>
 
-          <div class="hero-pillars-strip">
-            <span>Bharatanatyam Exponent</span>
-            <span class="dot">◆</span>
-            <span>Krishnamacharya Yoga</span>
-            <span class="dot">◆</span>
-            <span>Vedic Chanting</span>
+          <div class="hero-pillars">
+            Bharatanatyam &nbsp;·&nbsp; Krishnamacharya Yoga &nbsp;·&nbsp; Vedic Chanting
           </div>
 
           <p class="hero-lead">
-            With over <strong>20 years</strong> of global performance and instructional experience, <strong>Mohana Natarajan</strong> bridges classical South Indian dance with contemporary movement conditioning, breathwork, and Vedic philosophy across <strong>Leixlip, Newbridge, Dublin</strong>, and online worldwide.
+            Bridging twenty years of classical South Indian dance with mindful breathwork, alignment, and Vedic philosophy. Classes for children, teens, and adults in <strong>Leixlip</strong>, <strong>Newbridge</strong>, and <strong>Online</strong>.
           </p>
 
           <div class="hero-cta-row">
-            <a href="#offerings" class="btn-gold">Explore Classes &amp; Offerings</a>
-            <a href="https://www.instagram.com/natarajanmohana/" target="_blank" rel="noopener" class="btn-ghost">
-              @natarajanmohana ↗
+            <a href="https://www.instagram.com/natarajanmohana/" target="_blank" rel="noopener" class="btn-gold">
+              Follow on Instagram ↗
+            </a>
+            <a href="#offerings" class="btn-ghost">
+              Explore Offerings
             </a>
           </div>
         </div>
 
-        <!-- Right: Multi-layer Parallax Cutout Stage -->
+        <!-- Sculptural Parallax Stage — Pure Abhinaya Pose -->
         <div class="hero-stage">
-          <div class="sacred-arch" data-parallax="0.08"></div>
-          <div class="sun-halo" data-parallax="-0.12"></div>
+          <div class="sacred-arch" data-parallax="0.07"></div>
+          <div class="sun-halo" data-parallax="-0.11"></div>
 
-          <div class="hero-dancer-wrap" data-parallax="-0.05">
+          <div class="hero-dancer-wrap" data-parallax="-0.04">
             <img
-              id="heroDancer"
               class="hero-dancer-img"
               src="assets/mohana-seated.png"
-              alt="Mohana Natarajan in classical Bharatanatyam Mudra pose"
+              alt="Mohana Natarajan in classical Bharatanatyam Abhinaya pose"
             />
-          </div>
-
-          <div class="pose-Dock" role="group" aria-label="Switch dance posture">
-            <button type="button" class="pose-chip active" onclick="setHeroPose('seated', this)">Abhinaya Pose</button>
-            <button type="button" class="pose-chip" onclick="setHeroPose('standing', this)">Natya Pose</button>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Kinetic Marquee Strip -->
-    <div class="marquee-strip" aria-hidden="true">
-      <div class="marquee-track">
-        <span>Nritya Kalā Vrukṣa</span><span class="star">✦</span>
-        <span>Disciple of Padmashri Adyar K. Lakshman &amp; Smt. Induvadana</span><span class="star">✦</span>
-        <span>M.A. Bharatanatyam · University of Madras</span><span class="star">✦</span>
-        <span>Krishnamacharya Yoga Mandiram (KYM) Accredited</span><span class="star">✦</span>
-        <span>ICCR Cultural Representative</span><span class="star">✦</span>
-        <span>Leixlip · Newbridge · Dublin · Online</span><span class="star">✦</span>
-        <span>Nritya Kalā Vrukṣa</span><span class="star">✦</span>
-        <span>Disciple of Padmashri Adyar K. Lakshman &amp; Smt. Induvadana</span><span class="star">✦</span>
-        <span>M.A. Bharatanatyam · University of Madras</span><span class="star">✦</span>
-        <span>Krishnamacharya Yoga Mandiram (KYM) Accredited</span><span class="star">✦</span>
-        <span>ICCR Cultural Representative</span><span class="star">✦</span>
-        <span>Leixlip · Newbridge · Dublin · Online</span><span class="star">✦</span>
+    <!-- Poetic Sacred Lotus & Breath Divider (Replaces Stock Ticker) -->
+    <div class="tala-divider reveal" aria-hidden="true">
+      <svg class="tala-lotus" data-parallax="-0.05" viewBox="0 0 120 120" fill="none" stroke="#D8AD38" stroke-width="1">
+        <circle cx="60" cy="60" r="54" opacity="0.35" />
+        <circle cx="60" cy="60" r="36" opacity="0.5" />
+        <path d="M60 12 C72 34, 72 86, 60 108 C48 86, 48 34, 60 12 Z" opacity="0.65" />
+        <path d="M12 60 C34 72, 86 72, 108 60 C86 48, 34 48, 12 60 Z" opacity="0.65" />
+      </svg>
+      <div class="tala-triad">
+        <span class="line"></span>
+        <span>Bhāva &nbsp;·&nbsp; Rāga &nbsp;·&nbsp; Tāla &nbsp;·&nbsp; Prāṇa</span>
+        <span class="line"></span>
       </div>
     </div>
 
     <!-- ==========================================
-         2. CORE OFFERINGS & SERVICES (MINIMAL INTERACTIVE)
+         2. FOUR SACRED PRACTICES (CLEAN & DIRECT)
          ========================================== -->
-    <section id="offerings" class="practices-section">
+    <section id="offerings" class="section">
       <div class="wrap">
-        <div class="section-top reveal">
-          <div>
-            <span class="micro-label">Disciplines &amp; Instruction</span>
-            <h2 class="section-heading">Four Sacred <em>Practices</em></h2>
-          </div>
-          <p class="section-note">
-            In-person classes at <strong>Leixlip Community Centre</strong> and <strong>Newbridge, Co. Kildare</strong>, alongside live online batches for children, teens, and adults.
-          </p>
+        <div class="section-head reveal">
+          <span class="micro-label">Academy &amp; Teaching</span>
+          <h2 class="section-title">What We <em>Offer</em></h2>
         </div>
 
-        <div class="pillars-interactive reveal">
-          <!-- Left: Minimal Interactive Accordion -->
+        <div class="practices-layout reveal">
           <div>
-            <div class="pillar-row active" onclick="selectPractice(0, this)" onmouseenter="selectPractice(0, this)">
-              <div class="pillar-header">
-                <div class="pillar-left">
-                  <span class="pillar-index">01</span>
-                  <h3 class="pillar-name">Nritya Kalā Vrukṣa · Bharatanatyam</h3>
+            <div class="practice-item active" onclick="selectPractice(0, this)" onmouseenter="selectPractice(0, this)">
+              <div class="practice-top">
+                <div>
+                  <span class="practice-num">01</span>
+                  <span class="practice-name">Bharatanatyam Academy</span>
                 </div>
-                <span class="pillar-tag">Kids · Teens · Adults</span>
+                <span class="practice-meta">Kids · Teens · Adults</span>
               </div>
-              <div class="pillar-body">
+              <div class="practice-desc">
                 <p>
-                  Structured classical curriculum covering foundational <em>Adavus</em>, geometric precision in <em>Nritta</em> (pure dance), nuanced <em>Abhinaya</em> (expressive storytelling), and <em>Tala</em> rhythm theory—from beginner admission to full <em>Margam</em> solo repertoire.
+                  Structured training under <strong>Nritya Kalā Vrukṣa</strong> covering foundational <em>Adavus</em>, pure rhythmic geometry (<em>Nritta</em>), expressive storytelling (<em>Abhinaya</em>), and full classical <em>Margam</em> repertoire. Held at <strong>Leixlip Community Centre</strong>, <strong>Newbridge</strong>, and live online.
                 </p>
-                <div class="pillar-meta-pills">
-                  <span>Leixlip Community Centre</span>
-                  <span>Newbridge Studio</span>
-                  <span>Interactive Online Batches</span>
-                </div>
               </div>
             </div>
 
-            <div class="pillar-row" onclick="selectPractice(1, this)" onmouseenter="selectPractice(1, this)">
-              <div class="pillar-header">
-                <div class="pillar-left">
-                  <span class="pillar-index">02</span>
-                  <h3 class="pillar-name">Krishnamacharya Holistic Yoga</h3>
+            <div class="practice-item" onclick="selectPractice(1, this)" onmouseenter="selectPractice(1, this)">
+              <div class="practice-top">
+                <div>
+                  <span class="practice-num">02</span>
+                  <span class="practice-name">Krishnamacharya Yoga</span>
                 </div>
-                <span class="pillar-tag">KYM Chennai Lineage</span>
+                <span class="practice-meta">Breath &amp; Alignment</span>
               </div>
-              <div class="pillar-body">
+              <div class="practice-desc">
                 <p>
-                  Accredited at the world-renowned <strong>Krishnamacharya Yoga Mandiram (KYM)</strong> in Chennai. Breath-synchronized movement (<em>Vinyasa Krama</em>), structural alignment, joint longevity, and mindful conditioning tailored for both classical dancers and general wellness practitioners.
+                  Holistic movement conditioning rooted in the <strong>Krishnamacharya Yoga Mandiram (KYM)</strong> tradition—synchronizing breath with posture, structural alignment, and injury prevention for dancers and everyday practitioners.
                 </p>
-                <div class="pillar-meta-pills">
-                  <span>Breath &amp; Alignment</span>
-                  <span>Dancer Conditioning</span>
-                  <span>PG Diploma Certified</span>
-                </div>
               </div>
             </div>
 
-            <div class="pillar-row" onclick="selectPractice(2, this)" onmouseenter="selectPractice(2, this)">
-              <div class="pillar-header">
-                <div class="pillar-left">
-                  <span class="pillar-index">03</span>
-                  <h3 class="pillar-name">Vedic Chanting &amp; Breathwork</h3>
+            <div class="practice-item" onclick="selectPractice(2, this)" onmouseenter="selectPractice(2, this)">
+              <div class="practice-top">
+                <div>
+                  <span class="practice-num">03</span>
+                  <span class="practice-name">Vedic Chanting</span>
                 </div>
-                <span class="pillar-tag">Authentic Sanskrit Phonetics</span>
+                <span class="practice-meta">Sanskrit &amp; Svara</span>
               </div>
-              <div class="pillar-body">
+              <div class="practice-desc">
                 <p>
-                  Authorized instruction in traditional Vedic recitation—mastering <em>Svara</em> (intonation rules), <em>Matra</em> (metre), Sanskrit phonetics, breath control, and meditative mantra practice for mental clarity and vocal resonance.
+                  Authorized instruction in traditional Vedic mantra recitation—focusing on authentic Sanskrit phonetics, intonation rules (<em>Svara</em>), breath control, and meditative vocal resonance.
                 </p>
-                <div class="pillar-meta-pills">
-                  <span>1-on-1 &amp; Group Workshops</span>
-                  <span>Sanskrit Pronunciation</span>
-                  <span>Meditative Focus</span>
-                </div>
               </div>
             </div>
 
-            <div class="pillar-row" onclick="selectPractice(3, this)" onmouseenter="selectPractice(3, this)">
-              <div class="pillar-header">
-                <div class="pillar-left">
-                  <span class="pillar-index">04</span>
-                  <h3 class="pillar-name">Stage Recitals, Choreography &amp; Therapy</h3>
+            <div class="practice-item" onclick="selectPractice(3, this)" onmouseenter="selectPractice(3, this)">
+              <div class="practice-top">
+                <div>
+                  <span class="practice-num">04</span>
+                  <span class="practice-name">Stage Recitals &amp; Workshops</span>
                 </div>
-                <span class="pillar-tag">Concerts · Schools · Festivals</span>
+                <span class="practice-meta">Concerts &amp; Outreach</span>
               </div>
-              <div class="pillar-body">
+              <div class="practice-desc">
                 <p>
-                  Solo and ensemble classical recitals, thematic productions, festival showcases, and interactive school lecture-demonstrations across Ireland—alongside specialized dance and movement therapy programs for neurodiverse communities.
+                  Solo and ensemble classical recitals, festival showcases, school lecture-demonstrations across Ireland, and therapeutic movement sessions.
                 </p>
-                <div class="pillar-meta-pills">
-                  <span>Solo &amp; Ensemble Recitals</span>
-                  <span>Cultural Outreach</span>
-                  <span>Movement Therapy</span>
-                </div>
               </div>
             </div>
           </div>
 
-          <!-- Right: Reactive Visual Stage -->
-          <div class="pillar-preview-stage" data-parallax="-0.04">
-            <img id="practicePreviewImg" src="assets/mohana-portrait.jpg" alt="Mohana Natarajan Bharatanatyam & Yoga" />
-            <div class="pillar-preview-caption">
-              <span id="practicePreviewLabel">01 · Classical Bharatanatyam</span>
-              <span>Leixlip · Newbridge · Online</span>
-            </div>
+          <div class="practice-visual-arch" data-parallax="-0.04">
+            <img id="practicePreviewImg" src="assets/mohana-portrait.jpg" alt="Mohana Natarajan — Nritya Kala Vruksha" />
           </div>
         </div>
       </div>
     </section>
 
     <!-- ==========================================
-         3. LINEAGE, CREDENTIALS & DIPLOMACY
+         3. VERTICAL LINEAGE & JOURNEY TIMELINE
          ========================================== -->
-    <section id="lineage" class="lineage-section">
+    <section id="lineage" class="timeline-section">
       <div class="wrap">
-        <div class="section-top reveal">
-          <div>
-            <span class="micro-label">Pedigree &amp; Credentials</span>
-            <h2 class="section-heading">Lineage &amp; <em>Global Impact</em></h2>
-          </div>
-          <p class="section-note">
-            Two decades of classical mentorship in Chennai and cultural diplomacy across Asia and Europe.
-          </p>
+        <div class="section-head reveal" style="text-align: center;">
+          <span class="micro-label">Paramparā · The Unbroken Thread</span>
+          <h2 class="section-title">Lineage &amp; <em>Journey</em></h2>
         </div>
 
-        <div class="lineage-grid reveal">
-          <article class="pedigree-card">
-            <div>
-              <span class="pedigree-eyebrow">01 · Gurukula Lineage</span>
-              <h3>Padmashri Adyar K. Lakshman &amp; Smt. Induvadana</h3>
-              <p>
-                Disciple in the celebrated <em>Adyar Bani</em>. Advanced training at <strong>Bharatha Choodamani Academy of Fine Arts</strong> (2009–2017) and engagement with the historic <strong>Kalakshetra Foundation</strong>.
-              </p>
-            </div>
-            <div class="pedigree-foot">Madras Classical Tradition</div>
-          </article>
+        <div class="timeline-wrap reveal">
+          <div class="timeline-node">
+            <span class="timeline-dot"></span>
+            <span class="timeline-era">Gurukula Roots · Madras</span>
+            <h3 class="timeline-title">Disciple of Padmashri Adyar K. Lakshman &amp; Smt. Induvadana</h3>
+            <p class="timeline-text">
+              Initiated and trained in the classical <em>Adyar Bani</em> of Bharatanatyam, followed by advanced training at the <strong>Bharatha Choodamani Academy of Fine Arts</strong> (2009–2017) and engagement with the historic <strong>Kalakshetra Foundation</strong>.
+            </p>
+          </div>
 
-          <article class="pedigree-card">
-            <div>
-              <span class="pedigree-eyebrow">02 · Academic Degrees</span>
-              <h3>M.A. in Bharatanatyam · University of Madras</h3>
-              <p>
-                Holds a Master of Arts (M.A.) in Bharatanatyam and a Bachelor of Commerce (B.Com) from the <strong>University of Madras</strong>, uniting theoretical <em>Natyashastra</em> scholarship with stage praxis.
-              </p>
-            </div>
-            <div class="pedigree-foot">University of Madras</div>
-          </article>
+          <div class="timeline-node">
+            <span class="timeline-dot"></span>
+            <span class="timeline-era">Academic &amp; Yogic Mastery · Chennai</span>
+            <h3 class="timeline-title">University of Madras &amp; Krishnamacharya Yoga Mandiram</h3>
+            <p class="timeline-text">
+              Earned a <strong>Master of Arts (M.A.) in Bharatanatyam</strong> and B.Com from the <strong>University of Madras</strong>, alongside a Post Graduate Diploma in Yoga Teacher Training and Vedic Chanting authorization at <strong>Krishnamacharya Yoga Mandiram (KYM)</strong>.
+            </p>
+          </div>
 
-          <article class="pedigree-card">
-            <div>
-              <span class="pedigree-eyebrow">03 · Yoga &amp; Vedic Accreditation</span>
-              <h3>Krishnamacharya Yoga Mandiram (KYM)</h3>
-              <p>
-                Trained at <strong>KYM Chennai</strong> with a Post Graduate Diploma in Yoga Teacher Training, alongside formal authorization as a <strong>Vedic Chanting</strong> practitioner and teacher.
-              </p>
-            </div>
-            <div class="pedigree-foot">Chennai, India</div>
-          </article>
+          <div class="timeline-node">
+            <span class="timeline-dot"></span>
+            <span class="timeline-era">Cultural Diplomacy · Cambodia</span>
+            <h3 class="timeline-title">ICCR Representative &amp; Movement Therapy</h3>
+            <p class="timeline-text">
+              Selected by the <strong>Indian Council for Cultural Relations (ICCR)</strong> at the Embassy of India in Phnom Penh. Conducted workshops at the Royal University of Fine Arts and led dance therapy for children with neurodevelopmental needs with <strong>Caritas Cambodia (CCAMH)</strong>.
+            </p>
+          </div>
 
-          <article class="pedigree-card">
-            <div>
-              <span class="pedigree-eyebrow">04 · Cultural Diplomacy &amp; Therapy</span>
-              <h3>ICCR Envoy &amp; Movement Therapy</h3>
-              <p>
-                Selected by the <strong>Indian Council for Cultural Relations (ICCR)</strong> at the Embassy of India in Cambodia. Led workshops at the Royal University of Fine Arts and dance therapy with <strong>Caritas Cambodia (CCAMH)</strong>.
-              </p>
-            </div>
-            <div class="pedigree-foot">India · Cambodia · Ireland</div>
-          </article>
+          <div class="timeline-node">
+            <span class="timeline-dot"></span>
+            <span class="timeline-era">Present · Kildare &amp; Dublin, Ireland</span>
+            <h3 class="timeline-title">Artistic Director of Nritya Kalā Vrukṣa</h3>
+            <p class="timeline-text">
+              Leading Bharatanatyam, Yoga, and Vedic Chanting classes across Ireland while curating international concert collaborations and festival showcases.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- ==========================================
-         4. UPCOMING PRODUCTION: THE MADRAS CONCERT (20 FEB 2027)
+         4. UPCOMING CONCERT SPOTLIGHT (SIMPLE & CLEAN)
          ========================================== -->
-    <section id="premiere" class="premiere-section">
-      <img class="premiere-watermark" data-parallax="0.12" src="assets/madras-watermark.png" alt="" aria-hidden="true" />
-
+    <section id="premiere" class="spotlight-section">
       <div class="wrap">
-        <div class="premiere-showcase reveal">
-          <div class="premiere-poster-col">
-            <div class="premiere-poster-wrap">
-              <img
-                id="madrasPoster"
-                src="assets/madras-concert-poster.png"
-                alt="The Madras Concert — Saturday 20 February 2027 at Riverbank Arts Centre"
-              />
-            </div>
-            <div class="poster-switch-strip">
-              <span>2027 Official Artwork</span>
-              <div>
-                <button type="button" class="active" onclick="swapConcertPoster('standard', this)">Artwork I</button>
-                <button type="button" onclick="swapConcertPoster('swapped', this)">Artwork II</button>
-              </div>
-            </div>
+        <div class="spotlight-grid reveal">
+          <div class="spotlight-poster" data-parallax="-0.03">
+            <img
+              src="assets/madras-concert-poster.png"
+              alt="The Madras Concert — Saturday 20 February 2027 at Riverbank Arts Centre"
+            />
           </div>
 
           <div>
-            <span class="micro-label">Upcoming Headline Production · Nritya Kala Vruksha Presents</span>
-            <h2 class="premiere-title">The Madras Concert</h2>
+            <span class="micro-label">Upcoming Production · 20 February 2027</span>
+            <h2 class="spotlight-title">The Madras Concert</h2>
 
-            <div class="premiere-date-bar">
-              Saturday 20 February 2027 &nbsp;·&nbsp; 7:00 PM &nbsp;·&nbsp; Riverbank Arts Centre, Newbridge
+            <div class="spotlight-meta">
+              Riverbank Arts Centre, Newbridge &nbsp;·&nbsp; 7:00 PM &nbsp;·&nbsp; Tickets €16
             </div>
 
-            <p class="premiere-copy">
-              Carrying audiences back to the quiet grace and timeless beauty of a <strong>1980s Madras</strong> Bharatanatyam evening. Unfolding through solo and duet repertoire by <strong>Padmashri Adyar K. Lakshman</strong> and <strong>Kalanidhi Narayanan</strong>, <strong>Mohana Natarajan</strong> shares the stage with acclaimed Viennese dancer and scholar <strong>Prof. Dr. Radha Anjali</strong> (Founder of Natya Mandir Vienna, 1983 &amp; President of the Austro-Indian Association).
+            <p class="spotlight-summary">
+              An evening evoking the spirit of 1980s Madras through solo and duet repertoire by <strong>Padmashri Adyar K. Lakshman</strong> and <strong>Kalanidhi Narayanan</strong>, featuring <strong>Prof. Dr. Radha Anjali</strong> (Vienna) and <strong>Mohana Natarajan</strong>.
             </p>
 
-            <div class="premiere-meta-row">
-              <div>
-                <small>Venue</small>
-                <span>Riverbank Arts Centre, W12 D962</span>
-              </div>
-              <div>
-                <small>Admission</small>
-                <span>€16 · 2 Hours (No Interval)</span>
-              </div>
-              <div>
-                <small>Audience</small>
-                <span>Ages 6+ · Wheelchair Accessible</span>
-              </div>
-            </div>
-
-            <div class="hero-cta-row" style="margin-top: 10px;">
+            <div class="hero-cta-row" style="margin-top: 0;">
               <a href="https://www.riverbank.ie" target="_blank" rel="noopener" class="btn-gold">
-                Reserve Tickets · Riverbank.ie
-              </a>
-              <a href="tel:+35345448327" class="btn-ghost">
-                Box Office · 045 448 327
+                Tickets · Riverbank.ie ↗
               </a>
             </div>
           </div>
@@ -1711,228 +1114,93 @@
     </section>
 
     <!-- ==========================================
-         5. ASYMMETRIC PARALLAX GALLERY (WITH CUSTOM PHOTO SLOT)
-         ========================================== -->
-    <section id="gallery" class="gallery-section">
-      <div class="wrap">
-        <div class="section-top reveal">
-          <div>
-            <span class="micro-label">Visual Portfolio</span>
-            <h2 class="section-heading">Movement in <em>Stillness</em></h2>
-          </div>
-          <p class="section-note">
-            Stage photography, classical <em>Abhinaya</em>, and open curatorial frames ready for your latest Instagram reels and recital stills.
-          </p>
-        </div>
-
-        <div class="parallax-gallery-grid">
-          <!-- Frame 1: Mohana Portrait -->
-          <figure class="gallery-card g-col-5 reveal" data-parallax="-0.03">
-            <img src="assets/mohana-portrait.jpg" alt="Mohana Natarajan classical mudra portrait" />
-            <figcaption class="gallery-overlay">
-              <span class="gallery-tag">Nritya Kalā Vrukṣa · Ireland</span>
-              <span class="gallery-caption">Hasta Mudra &amp; Abhinaya</span>
-            </figcaption>
-          </figure>
-
-          <!-- Frame 2: Dual Artist Stage Composition -->
-          <figure class="gallery-card g-col-7 reveal" data-parallax="0.05">
-            <img src="assets/madras-stage-16x9.jpg" alt="The Madras Concert dual-artist stage plate" />
-            <figcaption class="gallery-overlay">
-              <span class="gallery-tag">Shared Lineage · Adyar K. Lakshman Bani</span>
-              <span class="gallery-caption">Radha Anjali &amp; Mohana Natarajan</span>
-            </figcaption>
-          </figure>
-
-          <!-- Frame 3: Classical Natya -->
-          <figure class="gallery-card g-col-4 reveal" data-parallax="-0.04">
-            <img src="assets/gallery-1.jpg" alt="Classical Bharatanatyam Karana posture" />
-            <figcaption class="gallery-overlay">
-              <span class="gallery-tag">Nritta Geometry</span>
-              <span class="gallery-caption">Academy Repertoire &amp; Adavus</span>
-            </figcaption>
-          </figure>
-
-          <!-- Frame 4: Expressive Abhinaya -->
-          <figure class="gallery-card g-col-4-offset reveal" data-parallax="0.04">
-            <img src="assets/gallery-4.jpg" alt="Bharatanatyam Abhinaya storytelling" />
-            <figcaption class="gallery-overlay">
-              <span class="gallery-tag">Bhava &amp; Padam</span>
-              <span class="gallery-caption">Expressive Storytelling</span>
-            </figcaption>
-          </figure>
-
-          <!-- Frame 5: Interactive Drop-In Placeholder Slot (User can click to preview any photo!) -->
-          <div class="gallery-card g-col-4-slot gallery-placeholder-slot reveal" onclick="document.getElementById('customPhotoInput').click()">
-            <input type="file" id="customPhotoInput" accept="image/*" style="display: none;" onchange="previewCustomGalleryPhoto(event)" />
-            <img id="customPreviewImg" src="" alt="" style="display: none; position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover;" />
-            <div id="slotPrompt" style="position: relative; z-index: 2;">
-              <div class="slot-icon">+</div>
-              <span class="gallery-tag" style="display: block;">Curatorial Slot · Ready for Your Photos</span>
-              <h4 class="serif" style="font-size: 1.4rem; color: var(--ivory); font-weight: 400; margin: 8px 0;">
-                Drop or Click to Preview a New Stage / Yoga Photo
-              </h4>
-              <p style="font-size: 0.82rem; color: var(--ivory-subtle); max-width: 240px; margin: 0 auto;">
-                Test how your latest photos from @natarajanmohana look right inside the grid.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ==========================================
-         6. SELECTED PERFORMANCE & MEDIA ARCHIVE
+         5. STAGE & VIDEO ARCHIVE (LINKED TO VIDEOS/REELS)
          ========================================== -->
     <section id="archive" class="archive-section">
       <div class="wrap">
-        <div class="section-top reveal">
-          <div>
-            <span class="micro-label">Selected Works &amp; Recitals</span>
-            <h2 class="section-heading">Stage <em>Archive</em></h2>
-          </div>
-          <p class="section-note">
-            From diplomatic showcases for the Embassy of India to regional Irish arts festivals and Phoenix FM radio features.
-          </p>
+        <div class="section-head reveal">
+          <span class="micro-label">Selected Works</span>
+          <h2 class="section-title">Stage &amp; Video <em>Archive</em></h2>
         </div>
 
-        <div class="archive-table reveal">
-          <div class="archive-row">
-            <span class="arch-region">Ireland · 2027</span>
-            <span class="arch-venue">Riverbank Arts Centre, Newbridge</span>
-            <span class="arch-role"><em>The Madras Concert</em> — Headline duet &amp; solo evening with Prof. Dr. Radha Anjali</span>
-          </div>
-          <div class="archive-row">
-            <span class="arch-region">Ireland · Naas</span>
-            <span class="arch-venue">The Moat Theatre — <em>Nritya Sadhana</em></span>
-            <span class="arch-role">Featured classical Bharatanatyam recital &amp; ensemble showcase</span>
-          </div>
-          <div class="archive-row">
-            <span class="arch-region">Ireland · Dublin</span>
-            <span class="arch-venue">17th Indian Film Festival of Ireland &amp; Embassy Events</span>
-            <span class="arch-role">Cultural dance showcase &amp; official Independence / Republic Day performances</span>
-          </div>
-          <div class="archive-row">
-            <span class="arch-region">Ireland · Leinster</span>
-            <span class="arch-venue">Townhall Newbridge (Junefest) · Bray Arts Fest · Festival of the Mountain</span>
-            <span class="arch-role">Solo &amp; student ensemble thematic productions (Lucan, Laois, Utsav Midland Fest)</span>
-          </div>
-          <div class="archive-row">
-            <span class="arch-region">Ireland · Media</span>
-            <span class="arch-venue">Phoenix FM Radio Feature &amp; Ramakrishna Vedanta Centre</span>
-            <span class="arch-role">Featured artist interview &amp; commemorative classical recitals in Dublin</span>
-          </div>
-          <div class="archive-row">
-            <span class="arch-region">Cambodia · ICCR</span>
-            <span class="arch-venue">Embassy of India (Phnom Penh) &amp; Royal University of Fine Arts</span>
-            <span class="arch-role">ICCR Cultural Representative recitals, workshops &amp; Caritas (CCAMH) movement therapy</span>
-          </div>
-          <div class="archive-row">
-            <span class="arch-region">India &amp; Europe</span>
-            <span class="arch-venue">Chennai · Bala Kala Vidhanam (Tiruchirappalli) · Denmark</span>
-            <span class="arch-role">Traditional <em>Margam</em> solo recitals, DD Podhigai features &amp; international touring</span>
-          </div>
+        <div class="archive-list reveal">
+          <a href="https://www.youtube.com/watch?v=9M_BtVxt4OI" target="_blank" rel="noopener" class="archive-row">
+            <span class="arch-loc">Television · India</span>
+            <span class="arch-event">DD Podhigai Classical Broadcast</span>
+            <span class="arch-note">Solo Bharatanatyam recital in the Adyar K. Lakshman lineage</span>
+            <span class="arch-watch">Watch Video ↗</span>
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=mI2uSe997J8" target="_blank" rel="noopener" class="archive-row">
+            <span class="arch-loc">Recital · Archive</span>
+            <span class="arch-event">Classical Margam Repertoire</span>
+            <span class="arch-note">Traditional Nritta &amp; Abhinaya solo performance</span>
+            <span class="arch-watch">Watch Video ↗</span>
+          </a>
+
+          <a href="https://www.instagram.com/natarajanmohana/" target="_blank" rel="noopener" class="archive-row">
+            <span class="arch-loc">Ireland · Naas</span>
+            <span class="arch-event">The Moat Theatre — <em>Nritya Sadhana</em></span>
+            <span class="arch-note">Featured classical recital &amp; academy showcase</span>
+            <span class="arch-watch">View on Instagram ↗</span>
+          </a>
+
+          <a href="https://www.instagram.com/natarajanmohana/" target="_blank" rel="noopener" class="archive-row">
+            <span class="arch-loc">Ireland · Festivals</span>
+            <span class="arch-event">17th Indian Film Festival Ireland · Junefest · Bray Arts Fest</span>
+            <span class="arch-note">Townhall Newbridge, Festival of the Mountain &amp; Embassy of India Dublin</span>
+            <span class="arch-watch">View Reels ↗</span>
+          </a>
+
+          <a href="https://www.youtube.com/@bharatanatyam-mohananatara9535" target="_blank" rel="noopener" class="archive-row">
+            <span class="arch-loc">Cambodia &amp; Europe</span>
+            <span class="arch-event">ICCR Embassy Recitals &amp; International Touring</span>
+            <span class="arch-note">Phnom Penh, Bala Kala Vidhanam (Tiruchirappalli) &amp; Denmark</span>
+            <span class="arch-watch">YouTube Channel ↗</span>
+          </a>
         </div>
       </div>
     </section>
   </main>
 
   <!-- ==========================================
-       7. MINIMAL CONCIERGE & SOCIAL PORTAL
+       6. MINIMAL FOOTER (INSTAGRAM & YOUTUBE)
        ========================================== -->
-  <footer id="connect" class="portal-footer">
-    <div class="wrap">
-      <div class="portal-grid reveal">
-        <div>
-          <span class="micro-label">Begin Your Practice or Collaboration</span>
-          <h2 class="portal-headline">
-            Step Into the <em>Circle</em>
-          </h2>
-          <p style="color: var(--ivory-muted); font-weight: 300; max-width: 480px; line-height: 1.75;">
-            Most daily class updates, student reels, workshop announcements, and direct messages happen on Instagram. Connect directly or send an inquiry for <strong>Leixlip</strong>, <strong>Newbridge</strong>, or <strong>Online</strong> admissions.
-          </p>
+  <footer class="footer-minimal">
+    <div class="wrap reveal">
+      <img src="assets/logo-gold.png" alt="Nritya Kala Vruksha Emblem" class="footer-emblem" />
 
-          <div class="social-hub-cards">
-            <a href="https://www.instagram.com/natarajanmohana/" target="_blank" rel="noopener" class="social-card">
-              <div class="social-card-left">
-                <small>Primary Hub · Daily Reels &amp; Class Updates</small>
-                <strong>Instagram · @natarajanmohana</strong>
-              </div>
-              <span style="color: var(--gold-soft); font-size: 1.3rem;">↗</span>
-            </a>
+      <h2 class="footer-heading">
+        Nritya Kalā <em>Vrukṣa</em>
+      </h2>
 
-            <a href="https://ie.linkedin.com/in/mohana-natarajan-9345616b" target="_blank" rel="noopener" class="social-card">
-              <div class="social-card-left">
-                <small>Professional Portfolio &amp; Institutional Work</small>
-                <strong>LinkedIn · Mohana Natarajan</strong>
-              </div>
-              <span style="color: var(--gold-soft); font-size: 1.3rem;">↗</span>
-            </a>
+      <p class="footer-locations">
+        Leixlip Community Centre &nbsp;·&nbsp; Newbridge, Co. Kildare &nbsp;·&nbsp; Dublin &nbsp;·&nbsp; Online
+      </p>
 
-            <a href="https://www.youtube.com/@bharatanatyam-mohananatara9535" target="_blank" rel="noopener" class="social-card">
-              <div class="social-card-left">
-                <small>Video Archive &amp; Recital Recordings</small>
-                <strong>YouTube · Bharatanatyam &amp; Chanting</strong>
-              </div>
-              <span style="color: var(--gold-soft); font-size: 1.3rem;">↗</span>
-            </a>
-          </div>
-        </div>
-
-        <!-- Minimal Direct Inquiry Concierge -->
-        <div class="concierge-card">
-          <h3>Direct Inquiry</h3>
-          <p>Select your interest to compose a ready-to-send message for Mohana.</p>
-
-          <form onsubmit="sendMinimalInquiry(event)">
-            <div class="field">
-              <label for="cName">Your Name</label>
-              <input type="text" id="cName" required placeholder="Enter your name" />
-            </div>
-
-            <div class="field">
-              <label for="cPath">Program or Booking</label>
-              <select id="cPath">
-                <option value="Bharatanatyam Classes (Leixlip / Newbridge / Online)">Bharatanatyam Classes (Leixlip / Newbridge / Online)</option>
-                <option value="Krishnamacharya Yoga & Movement Conditioning">Krishnamacharya Yoga &amp; Movement Conditioning</option>
-                <option value="Vedic Chanting Workshop">Vedic Chanting Workshop</option>
-                <option value="Stage Recital / Festival / Workshop Booking">Stage Recital / Festival / Workshop Booking</option>
-                <option value="The Madras Concert (20 Feb 2027 — Riverbank Arts Centre)">The Madras Concert (20 Feb 2027 — Riverbank Arts Centre)</option>
-              </select>
-            </div>
-
-            <div class="field">
-              <label for="cNote">Note (Optional)</label>
-              <textarea id="cNote" rows="2" placeholder="Age group, preferred location (Leixlip / Newbridge / Online), or event date..."></textarea>
-            </div>
-
-            <button type="submit" class="btn-gold" style="width: 100%; justify-content: center; border: none; cursor: pointer; margin-top: 12px;">
-              Copy Note &amp; Message on Instagram ↗
-            </button>
-            <p id="conciergeToast" style="display: none; margin-top: 14px; font-size: 0.84rem; color: var(--gold-soft); text-align: center;"></p>
-          </form>
-        </div>
+      <div class="footer-actions">
+        <a href="https://www.instagram.com/natarajanmohana/" target="_blank" rel="noopener" class="btn-gold">
+          Instagram · @natarajanmohana ↗
+        </a>
+        <a href="https://www.youtube.com/@bharatanatyam-mohananatara9535" target="_blank" rel="noopener" class="btn-ghost">
+          YouTube Archive ↗
+        </a>
       </div>
 
-      <div class="footer-bottom">
-        <span>© 2026–2027 Mohana Natarajan · Nritya Kalā Vrukṣa (Institution of Bharatanatyam &amp; Yoga), Ireland.</span>
-        <span>Leixlip Community Centre · Newbridge, Co. Kildare · Dublin · Online</span>
+      <div class="footer-copy">
+        © 2026–2027 Mohana Natarajan · Nritya Kalā Vrukṣa — Institution of Bharatanatyam, Yoga &amp; Vedic Chanting.
       </div>
     </div>
   </footer>
 
   <script>
-    // 1. Smooth Parallax & Scroll Progress Engine
-    const scrollProgress = document.getElementById('scrollProgress');
+    // 1. Smooth Parallax & Sacred Yantra Rotation
     const navBar = document.getElementById('navBar');
     const sacredYantra = document.getElementById('sacredYantra');
     const parallaxNodes = document.querySelectorAll('[data-parallax]');
 
     function onScrollFrame() {
       const scrollY = window.scrollY;
-      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const pct = docHeight > 0 ? (scrollY / docHeight) * 100 : 0;
-      scrollProgress.style.width = pct + '%';
 
       if (scrollY > 40) {
         navBar.classList.add('scrolled');
@@ -1940,12 +1208,10 @@
         navBar.classList.remove('scrolled');
       }
 
-      // Rotate fixed background Yantra subtly with scroll
       if (sacredYantra) {
-        sacredYantra.style.transform = `translate(-50%, -50%) rotate(${scrollY * 0.035}deg)`;
+        sacredYantra.style.transform = `translate(-50%, -50%) rotate(${scrollY * 0.03}deg)`;
       }
 
-      // Apply parallax offsets
       parallaxNodes.forEach(node => {
         const speed = parseFloat(node.getAttribute('data-parallax')) || 0;
         const rect = node.parentElement.getBoundingClientRect();
@@ -1968,105 +1234,27 @@
 
     document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
 
-    // 3. Custom Cursor Ring
-    const cursorRing = document.getElementById('cursorRing');
-    if (cursorRing && window.matchMedia('(hover: hover)').matches) {
-      window.addEventListener('mousemove', (e) => {
-        cursorRing.style.left = e.clientX + 'px';
-        cursorRing.style.top = e.clientY + 'px';
-      });
-
-      document.querySelectorAll('a, button, .pillar-row, .gallery-placeholder-slot').forEach(el => {
-        el.addEventListener('mouseenter', () => cursorRing.classList.add('hovered'));
-        el.addEventListener('mouseleave', () => cursorRing.classList.remove('hovered'));
-      });
-    }
-
-    // 4. Hero Pose Switcher
-    function setHeroPose(pose, btn) {
-      const img = document.getElementById('heroDancer');
-      document.querySelectorAll('.pose-chip').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-
-      img.style.opacity = '0';
-      setTimeout(() => {
-        img.src = pose === 'standing' ? 'assets/mohana-standing.png' : 'assets/mohana-seated.png';
-        img.style.opacity = '1';
-      }, 180);
-    }
-
-    // 5. Interactive 4 Sacred Practices Switcher
-    const practiceMedia = [
-      { img: 'assets/mohana-portrait.jpg', label: '01 · Classical Bharatanatyam' },
-      { img: 'assets/gallery-3.jpg', label: '02 · Krishnamacharya Yoga' },
-      { img: 'assets/gallery-veena.jpg', label: '03 · Vedic Chanting & Breath' },
-      { img: 'assets/madras-stage-16x9.jpg', label: '04 · Stage Recitals & Therapy' }
+    // 3. Four Sacred Practices Image Switcher (Using Only Authentic Photos)
+    const practiceImages = [
+      'assets/mohana-portrait.jpg',
+      'assets/mohana-seated.png',
+      'assets/mohana-portrait.jpg',
+      'assets/madras-stage-16x9.jpg'
     ];
 
-    function selectPractice(index, rowEl) {
-      document.querySelectorAll('.pillar-row').forEach(r => r.classList.remove('active'));
-      rowEl.classList.add('active');
+    function selectPractice(index, el) {
+      document.querySelectorAll('.practice-item').forEach(row => row.classList.remove('active'));
+      el.classList.add('active');
 
       const previewImg = document.getElementById('practicePreviewImg');
-      const previewLabel = document.getElementById('practicePreviewLabel');
-      const item = practiceMedia[index];
-
-      if (previewImg && item && !previewImg.src.endsWith(item.img)) {
-        previewImg.style.opacity = '0.3';
+      const targetSrc = practiceImages[index];
+      if (previewImg && targetSrc && !previewImg.src.endsWith(targetSrc)) {
+        previewImg.style.opacity = '0.35';
         setTimeout(() => {
-          previewImg.src = item.img;
-          previewLabel.textContent = item.label;
+          previewImg.src = targetSrc;
           previewImg.style.opacity = '1';
         }, 160);
       }
-    }
-
-    // 6. Concert Poster Variant Switcher
-    function swapConcertPoster(variant, btn) {
-      const img = document.getElementById('madrasPoster');
-      btn.parentElement.querySelectorAll('button').forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
-      img.src = variant === 'swapped'
-        ? 'assets/madras-concert-poster-swapped.png'
-        : 'assets/madras-concert-poster.png';
-    }
-
-    // 7. Live Photo Slot Previewer for Gallery
-    function previewCustomGalleryPhoto(event) {
-      const file = event.target.files[0];
-      if (!file) return;
-      const reader = new FileReader();
-      reader.onload = function(e) {
-        const img = document.getElementById('customPreviewImg');
-        const prompt = document.getElementById('slotPrompt');
-        img.src = e.target.result;
-        img.style.display = 'block';
-        prompt.style.background = 'rgba(7, 5, 6, 0.72)';
-        prompt.style.padding = '14px';
-        prompt.innerHTML = '<span class="gallery-tag">Custom Photo Loaded</span><div class="gallery-caption">Click to Change Photo</div>';
-      };
-      reader.readAsDataURL(file);
-    }
-
-    // 8. Minimal Inquiry Concierge -> Clipboard + Instagram
-    function sendMinimalInquiry(e) {
-      e.preventDefault();
-      const name = document.getElementById('cName').value.trim();
-      const path = document.getElementById('cPath').value;
-      const note = document.getElementById('cNote').value.trim();
-      const toast = document.getElementById('conciergeToast');
-
-      const text = `Namaste Mohana — I'm ${name}, inquiring about ${path}.${note ? ' ' + note : ''}`;
-      if (navigator.clipboard && window.isSecureContext) {
-        navigator.clipboard.writeText(text).catch(() => {});
-      }
-
-      toast.style.display = 'block';
-      toast.textContent = 'Message copied to clipboard! Opening @natarajanmohana on Instagram...';
-
-      setTimeout(() => {
-        window.open('https://www.instagram.com/natarajanmohana/', '_blank', 'noopener');
-      }, 800);
     }
   </script>
 </body>
